@@ -6,7 +6,7 @@ A responsive E-Commerce Website built with Vue JS and Vanilla CSS. The goal of t
 
 ## Preview
 
-![App Screenshot](/preview/f-and-m.png)
+![App Screenshot](/public/preview/f-and-m.png)
 
 ## 🚀 Live Demo
 
