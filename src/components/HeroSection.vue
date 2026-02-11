@@ -1,14 +1,34 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+
+const videoRef = ref(null)
+
+const playVideo = () => {
+  videoRef.value.plaly()
+}
+
+const pauseVideo = () => {
+  videoRef.value.pause()
+}
+
+const toggleVideo = () => {
+  if (videoRef.value.paused) {
+    videoRef.value.play()
+  } else {
+    videoRef.value.pause()
+  }
+}
+</script>
 
 <template>
   <div class="vid-container">
-    <video autoplay muted loop>
+    <video ref="videoRef">
       <source src="/videos/hero.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <div class="hero-section">
       <div class="btn-section">
-        <button>
+        <button @click="toggleVideo">
           <i class="bi bi-play"></i>
           <!-- <i class="bi bi-pause"></i> -->
         </button>
