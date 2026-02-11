@@ -24,7 +24,7 @@ nav {
 
 .logo {
   color: var(--brand-color);
-  font-size: clamp(1.3rem, 4vw + 1rem, 2.1rem);
+  font-size: clamp(1.5rem, 4vw + 1rem, 2.3rem);
   font-weight: 900;
 }
 
@@ -32,6 +32,7 @@ ul {
   list-style-type: none;
   display: inline-flex;
   gap: 1rem;
+  font-size: 1.2rem;
 }
 
 a {
@@ -42,5 +43,21 @@ a {
 
 a:hover {
   color: var(--brand-color);
+}
+
+button {
+  background-color: var(--brand-color);
+  color: var(--bg-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+button:hover {
+  background-color: var(--brand-hover);
 }
 </style>
