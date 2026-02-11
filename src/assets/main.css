@@ -43,6 +43,12 @@ p {
     font-family: var(--main-font);
 }
 
+@media (max-width: 655px) {
+    .no-mobile {
+        display: none !important;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: #111111;

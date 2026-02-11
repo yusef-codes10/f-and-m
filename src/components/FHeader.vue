@@ -3,7 +3,7 @@
 <template>
   <nav>
     <h2 class="logo">F&M</h2>
-    <ul>
+    <ul class="no-mobile">
       <li><a href="#">Products</a></li>
       <li><a href="#">Women</a></li>
       <li><a href="#">Men</a></li>

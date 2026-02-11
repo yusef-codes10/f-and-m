@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 
 const videoRef = ref(null)
-const isSound = ref(true)
-const isPlaying = ref(false)
+const isSound = ref(false)
+const isPlaying = ref(true)
 
 const toggleVideo = () => {
   if (videoRef.value.paused) {
@@ -28,9 +28,9 @@ const toggleSound = () => {
       Your browser does not support the video tag.
     </video>
     <div class="hero-section">
-      <div class="btn-section">
+      <div class="btn-section no-mobile">
         <button @click="toggleVideo">
-          <i :class="isPlaying ? 'bi bi-play' : 'bi bi-pause'"></i>
+          <i :class="isPlaying ? 'bi bi-pause' : 'bi bi-play'"></i>
           <!-- <i class="bi bi-pause"></i> -->
         </button>
 
@@ -131,6 +131,4 @@ button {
   cursor: pointer;
   color: var(--brand-color);
 }
-
-/* icons dynamic classes */
 </style>
