@@ -120,7 +120,7 @@ i {
   top: 15px;
   right: 5px;
   color: red;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   cursor: pointer;
 
   transform: all 0.6s;
