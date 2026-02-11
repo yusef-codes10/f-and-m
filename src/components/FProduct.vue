@@ -1,6 +1,8 @@
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps, ref } from 'vue'
 // import shoes from '@/data/women-shoes.js'
+
+const isHoverd = ref(false)
 
 defineProps({
   product: {
@@ -15,13 +17,18 @@ defineProps({
       <img :src="product.preview" alt="" />
     </div>
     <div class="content">
-      <p>status</p>
+      <p>{{ product.status }}</p>
+      <i
+        :class="isHoverd ? 'bi bi-heart-fill' : 'bi bi-heart'"
+        @mouseenter="isHoverd = true"
+        @mouseleave="isHoverd = false"
+      ></i>
       <h3>{{ product.title }}</h3>
       <div class="disceiption">
         <p>{{ product.description }}</p>
       </div>
       <div class="price">
-        <h4>{{ product.price }}</h4>
+        <h3>${{ product.price }}.00</h3>
       </div>
       <div class="available-colors">
         <div
@@ -37,7 +44,7 @@ defineProps({
 
 <style scoped>
 .product {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   overflow: hidden;
 }
 
@@ -91,5 +98,31 @@ defineProps({
   height: 20px;
   width: 20px;
   border: 2px solid var(--text-color);
+}
+
+.content {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+
+  position: relative;
+}
+
+.content p {
+  color: var(--secondary-text);
+  /* margin: 0.5rem 1rem; */
+}
+
+i {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  transform: all 0.6s;
 }
 </style>
