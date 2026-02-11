@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 
 const videoRef = ref(null)
-const isSound = ref(false)
-const isPlaying = ref(true)
+const isSound = ref(true)
+const isPlaying = ref(false)
 
 const toggleVideo = () => {
   if (videoRef.value.paused) {
@@ -16,17 +16,14 @@ const toggleVideo = () => {
 }
 
 const toggleSound = () => {
-  if (videoRef.value.muted) {
-    videoRef.value.volume
-  } else {
-    videoRef.value.muted
-  }
+  videoRef.value.muted = !videoRef.value.muted
+  isSound.value = !videoRef.value.muted
 }
 </script>
 
 <template>
   <div class="vid-container">
-    <video ref="videoRef">
+    <video ref="videoRef" autoplay muted loop playsinline>
       <source src="/videos/hero.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
@@ -38,7 +35,7 @@ const toggleSound = () => {
         </button>
 
         <button @click="toggleSound">
-          <i class="bi bi-volume-mute"></i>
+          <i v-bind:class="isSound ? 'bi bi-volume-mute' : 'bi bi-volume-up'"></i>
           <!-- <i class="bi bi-volume-up"></i> -->
         </button>
       </div>
