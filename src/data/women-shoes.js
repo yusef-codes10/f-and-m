@@ -43,3 +43,5 @@ const womenShoes = [
   //     availableColor: ['Black'],
   //   },
 ]
+
+export default womenShoes

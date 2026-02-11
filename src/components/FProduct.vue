@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+import { defineProps } from 'vue'
+
+defineProps({
+  peoduct: {
+    type: Object,
+  },
+})
+</script>
 
 <template>
   <div class="product">

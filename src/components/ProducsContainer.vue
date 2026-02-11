@@ -1,15 +1,10 @@
 <script setup>
 import FProduct from './FProduct.vue'
+import shoes from '@/data/women-shoes.js'
 </script>
 
 <template>
-  <div class="products">
-    <FProduct />
-    <FProduct />
-    <FProduct />
-    <FProduct />
-    <FProduct />
-    <FProduct />
+  <div class="products" v-for="shoe in shoes" :key="shoe.id">
     <FProduct />
   </div>
 </template>
