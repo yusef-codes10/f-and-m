@@ -7,10 +7,22 @@
       Your browser does not support the video tag.
     </video>
     <div class="hero-section">
-      <i class="bi bi-play"></i>
-      <i class="bi bi-pause"></i>
-      <i class="bi bi-volume-mute"></i>
-      <i class="bi bi-volume-up"></i>
+      <div class="btn-section">
+        <button>
+          <i class="bi bi-play"></i>
+          <i class="bi bi-pause"></i>
+        </button>
+
+        <button>
+          <i class="bi bi-volume-mute"></i>
+          <i class="bi bi-volume-up"></i>
+        </button>
+      </div>
+      <div class="cta-section">
+        <p>Elegance in Motion</p>
+        <h1>CASSIA COLLECTION</h1>
+        <button>DISCOVER</button>
+      </div>
     </div>
   </div>
 </template>
