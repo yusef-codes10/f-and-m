@@ -1,6 +1,7 @@
 const womenShoes = [
   {
     id: 1,
+    preview: '/images/so-kate-main.jpg',
     product: 'So Kate',
     description: '120 mm Pumps - Patent calf leather -',
     color: 'Black',
@@ -11,6 +12,7 @@ const womenShoes = [
   },
   {
     id: 2,
+    preview: '/images/miss-z-main.jpg',
     product: 'Miss Z',
     description: '100 mm Pumps - Diamond-shaped laminated lamb nappa leather - ',
     color: ' Platino Chiaro',
@@ -21,6 +23,7 @@ const womenShoes = [
   },
   {
     id: 3,
+    preview: '/images/hot-chick-main.jpg',
     product: 'Hot Chick',
     description: '100 mm Pumps - Patent calf leather ',
     color: 'Black',
@@ -29,14 +32,14 @@ const womenShoes = [
     price: 945,
     availableColor: ['Black', 'Blush', 'Bianco'],
   },
-  {
-    id: 4,
-    product: 'Pigalle',
-    description: '85 mm Pumps - Nappa leather',
-    color: 'Black',
-    for: 'Women',
-    status: 'Sold out',
-    price: '',
-    availableColor: ['Black'],
-  },
+  //   {
+  //     id: 4,
+  //     product: 'Pigalle',
+  //     description: '85 mm Pumps - Nappa leather',
+  //     color: 'Black',
+  //     for: 'Women',
+  //     status: 'Sold out',
+  //     price: '',
+  //     availableColor: ['Black'],
+  //   },
 ]
