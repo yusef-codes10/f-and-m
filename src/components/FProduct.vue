@@ -45,6 +45,7 @@ defineProps({
 .preview {
   width: 100%;
   aspect-ratio: 1 / 1;
+  margin-bottom: 1.5rem;
 }
 
 .preview img {
@@ -52,6 +53,11 @@ defineProps({
   height: 100%;
   object-fit: contain;
   display: block; /* removes weird gaps */
+
+  border-radius: 50% 50% 0 0;
+  box-shadow:
+    0 8px 20px var(--text-color),
+    0 2px 6px var(--text-color);
 }
 
 .black {
@@ -84,6 +90,6 @@ defineProps({
   /* padding: 1rem; */
   height: 20px;
   width: 20px;
-  border: var(--text-color);
+  border: 2px solid var(--text-color);
 }
 </style>
