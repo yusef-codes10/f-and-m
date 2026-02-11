@@ -4,8 +4,8 @@ import shoes from '@/data/women-shoes.js'
 </script>
 
 <template>
-  <div class="products" v-for="shoe in shoes" :key="shoe.id">
-    <FProduct product="shoe" />
+  <div class="products">
+    <FProduct v-for="shoe in shoes" :key="shoe.id" :product="shoe" />
   </div>
 </template>
 
