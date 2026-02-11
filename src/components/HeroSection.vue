@@ -21,7 +21,9 @@
       <div class="cta-section">
         <p>Elegance in Motion</p>
         <h1>CASSIA COLLECTION</h1>
-        <button>DISCOVER</button>
+        <div class="discover-btn">
+          <button>DISCOVER</button>
+        </div>
       </div>
     </div>
   </div>
@@ -41,9 +43,9 @@ video {
 }
 
 .hero-section {
-  background-color: seagreen;
+  background-color: transparent;
   display: flex;
-  gap: 30%;
+  gap: 20%;
   /* justify-content: center; */
   align-items: center;
   /* justify-content: space-around; */
@@ -61,5 +63,36 @@ video {
 
 .cta-section {
   padding: 2rem 4rem;
+  border: 2px solid red;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cta-section h1 {
+  font-size: clamp(1.3rem, 4vw + 1rem, 2.8rem);
+  font-weight: 900;
+  color: var(--brand-color);
+}
+
+.cta-section p {
+  text-align: center;
+  color: var(--brand-color);
+}
+
+.discover-btn {
+  display: flex;
+  justify-content: center;
+}
+.discover-btn button {
+  background-color: transparent;
+  border-color: var(--bg-color);
+  border: 2px solid;
+  padding: 12px 16px;
+  cursor: pointer;
+  color: var(--brand-color);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 </style>
