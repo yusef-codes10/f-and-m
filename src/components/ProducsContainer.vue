@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import FProduct from './FProduct.vue'
+</script>
 
-<template>.products</template>
+<template>
+  <FProduct />
+</template>
 
 <style scoped></style>
