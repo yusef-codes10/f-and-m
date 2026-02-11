@@ -2,7 +2,7 @@
 import { defineProps } from 'vue'
 
 defineProps({
-  peoduct: {
+  product: {
     type: Object,
   },
 })
@@ -11,11 +11,11 @@ defineProps({
 <template>
   <div class="product">
     <div class="preview">
-      <img src="" alt="" />
+      <img :src="product.preview" alt="" />
     </div>
     <div class="content">
       <p>status</p>
-      <h3>So Kate</h3>
+      <h3>{{ product.title }}</h3>
       <div class="disceiption">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel!</p>
       </div>
