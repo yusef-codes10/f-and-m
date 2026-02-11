@@ -1,5 +1,6 @@
 <script setup>
 import { defineProps } from 'vue'
+// import shoes from '@/data/women-shoes.js'
 
 defineProps({
   product: {
@@ -17,12 +18,19 @@ defineProps({
       <p>status</p>
       <h3>{{ product.title }}</h3>
       <div class="disceiption">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel!</p>
+        <p>{{ product.description }}</p>
       </div>
       <div class="price">
-        <h4>Price</h4>
+        <h4>{{ product.price }}</h4>
       </div>
-      <div class="available-color">Colors</div>
+      <div class="available-colors">
+        <div
+          class="color"
+          v-for="color in product.availableColor"
+          :key="color"
+          :class="color"
+        ></div>
+      </div>
     </div>
   </div>
 </template>
@@ -44,5 +52,38 @@ defineProps({
   height: 100%;
   object-fit: contain;
   display: block; /* removes weird gaps */
+}
+
+.black {
+  background-color: #000;
+}
+
+.blush {
+  background-color: burlywood;
+}
+
+.bianco {
+  background-color: #fff;
+}
+
+.lin-platin {
+  background-color: rgba(192, 192, 192, 0.796);
+}
+
+.silver {
+  background-color: silver;
+}
+
+.available-colors {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.color {
+  border-radius: 50%;
+  /* padding: 1rem; */
+  height: 20px;
+  width: 20px;
+  border: var(--text-color);
 }
 </style>

@@ -1,14 +1,14 @@
 const womenShoes = [
   {
     id: 1,
-    preview: '/images/so-kate-main.jpg',
+    preview: '/images/so-kate.jpg',
     title: 'So Kate',
     description: '120 mm Pumps - Patent calf leather -',
     color: 'Black',
     for: 'Women',
     status: 'BestSeller',
     price: 945,
-    availableColor: ['Black', 'Blush'],
+    availableColor: ['black', 'blush'],
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const womenShoes = [
     for: 'Women',
     status: 'New',
     price: 1045,
-    availableColor: ['Lin Platin', 'Silver'],
+    availableColor: ['lin-platin', 'silver'],
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const womenShoes = [
     for: 'Women',
     status: 'BestSeller',
     price: 945,
-    availableColor: ['Black', 'Blush', 'Bianco'],
+    availableColor: ['black', 'blush', 'bianco'],
   },
   //   {
   //     id: 4,
