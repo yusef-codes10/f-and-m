@@ -1,7 +1,9 @@
-<script setup></script>
+<script setup>
+import FHeader from './components/FHeader.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
+  <FHeader />
 </template>
 
 <style scoped></style>
