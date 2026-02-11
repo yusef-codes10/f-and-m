@@ -3,19 +3,19 @@ import { ref } from 'vue'
 
 const videoRef = ref(null)
 
-const playVideo = () => {
-  videoRef.value.plaly()
-}
-
-const pauseVideo = () => {
-  videoRef.value.pause()
-}
-
 const toggleVideo = () => {
   if (videoRef.value.paused) {
     videoRef.value.play()
   } else {
     videoRef.value.pause()
+  }
+}
+
+const toggleSound = () => {
+  if (videoRef.value.muted) {
+    videoRef.value.volume
+  } else {
+    videoRef.value.muted
   }
 }
 </script>
@@ -33,7 +33,7 @@ const toggleVideo = () => {
           <!-- <i class="bi bi-pause"></i> -->
         </button>
 
-        <button>
+        <button @click="toggleSound">
           <i class="bi bi-volume-mute"></i>
           <!-- <i class="bi bi-volume-up"></i> -->
         </button>
