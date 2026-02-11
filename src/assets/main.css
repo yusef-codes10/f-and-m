@@ -15,6 +15,12 @@
     --main-font: 'Montserrat', sans-serif;
 }
 
+.dark {
+    --bg-color: #111111;
+    --text-color: #F5F5F5;
+}
+
+
 * {
     margin: 0;
     padding: 0;
