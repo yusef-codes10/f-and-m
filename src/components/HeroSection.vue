@@ -2,12 +2,16 @@
 import { ref } from 'vue'
 
 const videoRef = ref(null)
+const isSound = ref(false)
+const isPlaying = ref(true)
 
 const toggleVideo = () => {
   if (videoRef.value.paused) {
     videoRef.value.play()
+    isPlaying.value = true
   } else {
     videoRef.value.pause()
+    isPlaying.value = false
   }
 }
 
@@ -29,7 +33,7 @@ const toggleSound = () => {
     <div class="hero-section">
       <div class="btn-section">
         <button @click="toggleVideo">
-          <i class="bi bi-play"></i>
+          <i :class="isPlaying ? 'bi bi-play' : 'bi bi-pause'"></i>
           <!-- <i class="bi bi-pause"></i> -->
         </button>
 
@@ -130,4 +134,6 @@ button {
   cursor: pointer;
   color: var(--brand-color);
 }
+
+/* icons dynamic classes */
 </style>
