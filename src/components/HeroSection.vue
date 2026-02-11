@@ -31,11 +31,35 @@
 .vid-container {
   height: calc(100vh - 81px);
   width: 100%;
+  position: relative;
 }
 
 video {
   width: 100%;
   height: 100%;
   object-fit: cover; /* like background-size: cover */
+}
+
+.hero-section {
+  background-color: seagreen;
+  display: flex;
+  gap: 30%;
+  /* justify-content: center; */
+  align-items: center;
+  /* justify-content: space-around; */
+  /* padding: 2rem 4rem; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.btn-section {
+  align-self: flex-end;
+  justify-self: flex-start;
+  padding: 1rem 2rem;
+}
+
+.cta-section {
+  padding: 2rem 4rem;
 }
 </style>
