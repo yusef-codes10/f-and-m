@@ -30,5 +30,19 @@ defineProps({
 <style scoped>
 .product {
   border: 2px solid red;
+  overflow: hidden;
+}
+
+/* styling the img and its container */
+.preview {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block; /* removes weird gaps */
 }
 </style>
