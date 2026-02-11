@@ -10,12 +10,12 @@
       <div class="btn-section">
         <button>
           <i class="bi bi-play"></i>
-          <i class="bi bi-pause"></i>
+          <!-- <i class="bi bi-pause"></i> -->
         </button>
 
         <button>
           <i class="bi bi-volume-mute"></i>
-          <i class="bi bi-volume-up"></i>
+          <!-- <i class="bi bi-volume-up"></i> -->
         </button>
       </div>
       <div class="cta-section">
@@ -63,7 +63,7 @@ video {
 
 .cta-section {
   padding: 2rem 4rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* text-align: center; */
   display: flex;
   flex-direction: column;
@@ -94,5 +94,20 @@ video {
   color: var(--brand-color);
   font-size: 1.2rem;
   font-weight: 600;
+  transform: all 0.6s;
+}
+
+.discover-btn button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+/* paly && pause btn */
+button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--brand-color);
 }
 </style>
