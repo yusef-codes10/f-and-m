@@ -6,6 +6,12 @@
       <source src="/videos/hero.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
+    <div class="hero-section">
+      <i class="bi bi-play"></i>
+      <i class="bi bi-pause"></i>
+      <i class="bi bi-volume-mute"></i>
+      <i class="bi bi-volume-up"></i>
+    </div>
   </div>
 </template>
 
@@ -18,5 +24,6 @@
 video {
   width: 100%;
   height: 100%;
+  object-fit: cover; /* like background-size: cover */
 }
 </style>
