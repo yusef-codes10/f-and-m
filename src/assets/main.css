@@ -1,0 +1,17 @@
+:root {
+    --brand-color: #CE0A2C;
+    --bg-color: #FFFFFF;
+    --text-color: #000000;
+
+
+    /* products colors */
+    --nude: #C38B66;
+    --black: #000;
+    --brown: #623319;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
