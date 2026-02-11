@@ -19,4 +19,8 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.product {
+  border: 2px solid red;
+}
+</style>
