@@ -1,7 +1,7 @@
 const womenShoes = [
   {
     id: 1,
-    preview: '/images/so-kate.jpg',
+    preview: ['/images/so-kate.jpg', '/images/so-kate-profile.jpg'],
     title: 'So Kate',
     description: '120 mm Pumps - Patent calf leather -',
     color: 'Black',
@@ -12,7 +12,7 @@ const womenShoes = [
   },
   {
     id: 2,
-    preview: '/images/miss-z-main.jpg',
+    preview: ['/images/miss-z-main.jpg', '/images/miss-z-profile.jpg'],
     title: 'Miss Z',
     description: '100 mm Pumps - Diamond-shaped laminated lamb nappa leather - ',
     color: ' Platino Chiaro',
@@ -23,7 +23,7 @@ const womenShoes = [
   },
   {
     id: 3,
-    preview: '/images/hot-chick-main.jpg',
+    preview: ['/images/hot-chick-main.jpg', '/images/hot-chick-profile.jpg'],
     title: 'Hot Chick',
     description: '100 mm Pumps - Patent calf leather ',
     color: 'Black',
