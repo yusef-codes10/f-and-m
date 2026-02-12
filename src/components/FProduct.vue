@@ -15,12 +15,14 @@ const currentImageIndex = ref(0)
 
 const isShowingArrows = ref(false)
 
-const showArrowButton = () => {}
+const showArrowButton = () => {
+  isShowingArrows.value = !isShowingArrows.value
+}
 </script>
 
 <template>
   <div class="product">
-    <div class="preview" @mouseenter="" @mouseleave="">
+    <div class="preview" @mouseenter="showArrowButton" @mouseleave="showArrowButton">
       <img :src="product.preview" alt="" />
 
       <!-- arrow buttons here that will only show when hovering -->
