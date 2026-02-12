@@ -14,6 +14,7 @@ const womenShoes = [
     status: 'BestSeller',
     price: 945,
     availableColor: ['black', 'blush'],
+    isFavorite: false,
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ const womenShoes = [
     status: 'New',
     price: 1045,
     availableColor: ['lin-platin', 'silver'],
+    isFavorite: false,
   },
   {
     id: 3,
@@ -46,6 +48,7 @@ const womenShoes = [
     status: 'BestSeller',
     price: 945,
     availableColor: ['black', 'blush', 'bianco'],
+    isFavorite: false,
   },
   //   {
   //     id: 4,
