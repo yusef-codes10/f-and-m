@@ -9,12 +9,19 @@ defineProps({
     type: Object,
   },
 })
+
+// hoverin on the preview img
+const currentImageIndex = ref(0)
+
+const showArrowButton = () => {}
 </script>
 
 <template>
   <div class="product">
-    <div class="preview">
+    <div class="preview" @mouseenter="" @mouseleave="">
       <img :src="product.preview" alt="" />
+
+      <!-- arrow buttons here that will only show when hovering -->
     </div>
     <div class="content">
       <p>{{ product.status }}</p>

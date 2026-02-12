@@ -16,4 +16,13 @@ import shoes from '@/data/women-shoes.js'
   gap: 1rem;
   margin: 1rem;
 }
+
+@media (max-width: 655px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+  }
+}
 </style>
