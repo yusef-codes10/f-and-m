@@ -13,6 +13,8 @@ defineProps({
 // hoverin on the preview img
 const currentImageIndex = ref(0)
 
+const isShowingArrows = ref(false)
+
 const showArrowButton = () => {}
 </script>
 
@@ -22,11 +24,11 @@ const showArrowButton = () => {}
       <img :src="product.preview" alt="" />
 
       <!-- arrow buttons here that will only show when hovering -->
-      <button class="leftBtn">
+      <button class="leftBtn" v-show="isShowingArrows">
         <i class="fa-solid fa-chevron-left"></i>
       </button>
 
-      <button class="rightBtn">
+      <button class="rightBtn" v-show="isShowingArrows">
         <i class="fa-solid fa-chevron-right"></i>
       </button>
     </div>
