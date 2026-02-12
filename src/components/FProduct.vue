@@ -28,8 +28,12 @@ const nextImage = (product) => {
   }
 }
 
-const previousImage = () => {
-  currentImageIndex.value--
+const previousImage = (product) => {
+  if (currentImageIndex.value > 0) {
+    currentImageIndex.value--
+  } else {
+    currentImageIndex.value = product.preview.length - 1
+  }
 }
 </script>
 
@@ -39,7 +43,7 @@ const previousImage = () => {
       <img :src="product.preview[currentImageIndex]" alt="" />
 
       <!-- arrow buttons here that will only show when hovering -->
-      <button class="leftBtn" v-show="isShowingArrows" @click="previousImage">
+      <button class="leftBtn" v-show="isShowingArrows" @click="previousImage(product)">
         <i class="fa-solid fa-chevron-left"></i>
       </button>
 
