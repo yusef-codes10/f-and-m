@@ -20,8 +20,12 @@ const showArrowButton = () => {
 }
 
 // arrow click events
-const nextImage = () => {
-  currentImageIndex.value++
+const nextImage = (product) => {
+  if (currentImageIndex.value < product.preview.length - 1) {
+    currentImageIndex.value++
+  } else {
+    currentImageIndex.value = 0
+  }
 }
 
 const previousImage = () => {
@@ -39,7 +43,7 @@ const previousImage = () => {
         <i class="fa-solid fa-chevron-left"></i>
       </button>
 
-      <button class="rightBtn" v-show="isShowingArrows" @click="nextImage">
+      <button class="rightBtn" v-show="isShowingArrows" @click="nextImage(product)">
         <i class="fa-solid fa-chevron-right"></i>
       </button>
     </div>
