@@ -18,19 +18,24 @@ const isShowingArrows = ref(false)
 const showArrowButton = () => {
   isShowingArrows.value = !isShowingArrows.value
 }
+
+// arrow click events
+const nextImage = () => {
+  currentImageIndex.value++
+}
 </script>
 
 <template>
   <div class="product">
     <div class="preview" @mouseenter="showArrowButton" @mouseleave="showArrowButton">
-      <img :src="product.preview" alt="" />
+      <img :src="product.preview[currentImageIndex]" alt="" />
 
       <!-- arrow buttons here that will only show when hovering -->
       <button class="leftBtn" v-show="isShowingArrows">
         <i class="fa-solid fa-chevron-left"></i>
       </button>
 
-      <button class="rightBtn" v-show="isShowingArrows">
+      <button class="rightBtn" v-show="isShowingArrows" @click="nextImage">
         <i class="fa-solid fa-chevron-right"></i>
       </button>
     </div>
