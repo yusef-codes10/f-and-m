@@ -63,7 +63,7 @@ import ToggleBtn from './ToggleBtn.vue'
 <style scoped>
 footer {
   height: 100vh;
-  background-color: seagreen;
+  /* background-color: seagreen; */
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -75,28 +75,28 @@ footer {
 }
 
 .help {
-  background-color: red;
+  /* background-color: red; */
   grid-area: help;
 }
 
 .services {
-  background-color: green;
+  /* background-color: green; */
   grid-area: services;
 }
 .about {
-  background-color: yellow;
+  /* background-color: yellow; */
   grid-area: about;
 }
 .legal {
-  background-color: blue;
+  /* background-color: blue; */
   grid-area: legal;
 }
 .links {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   grid-area: links;
 }
 .logo {
-  background-color: tomato;
+  /* background-color: tomato; */
   grid-area: logo;
 }
 .help,
@@ -126,5 +126,22 @@ i {
   margin: 0 auto;
   font-size: 3rem;
   color: var(--brand-color);
+}
+
+@media (max-width: 710px) {
+  footer {
+    height: 100vh;
+    /* background-color: seagreen; */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'help'
+      'services'
+      'about'
+      'legal'
+      'links'
+      'logo';
+  }
 }
 </style>
