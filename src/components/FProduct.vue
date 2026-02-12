@@ -22,6 +22,13 @@ const showArrowButton = () => {}
       <img :src="product.preview" alt="" />
 
       <!-- arrow buttons here that will only show when hovering -->
+      <button class="leftBtn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <button class="rightBtn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
     <div class="content">
       <p>{{ product.status }}</p>
@@ -60,6 +67,7 @@ const showArrowButton = () => {}
   width: 100%;
   aspect-ratio: 1 / 1;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 
 .preview img {
@@ -72,6 +80,8 @@ const showArrowButton = () => {}
   box-shadow:
     0 8px 20px var(--text-color),
     0 2px 6px var(--text-color);
+
+  /* display: none; */
 }
 
 .black {
@@ -127,9 +137,31 @@ i {
   top: 15px;
   right: 5px;
   color: red;
-  font-size: 1.3rem;
+  font-size: 2rem;
   cursor: pointer;
 
-  transform: all 0.6s;
+  transition: all 0.6s;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--brand-color);
+  z-index: 9999;
+  position: absolute;
+}
+
+.leftBtn {
+  top: 50%;
+  left: 10%;
+  /* transform: translateY(-50%); */
+}
+
+.rightBtn {
+  top: 50%; /* not bottom */
+  right: 0;
+  /* transform: translateY(-50%); */
 }
 </style>
