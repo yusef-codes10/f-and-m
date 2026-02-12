@@ -9,7 +9,7 @@ const isOn = ref(false)
     <span class="slider"></span>
   </label>
 
-  <p>{{ isOn }}</p>
+  <!-- <p>{{ isOn }}</p> -->
 </template>
 
 <style>

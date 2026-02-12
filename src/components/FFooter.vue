@@ -40,10 +40,23 @@ import ToggleBtn from './ToggleBtn.vue'
         <li>Credits</li>
       </ul>
     </div>
+    <hr />
     <div class="links">
+      <p>United States ($) - English</p>
       <ToggleBtn />
+      <div class="socials-links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
     </div>
-    <div class="logo"></div>
+    <hr />
+    <div class="logo">
+      <h2 class="logo">F&M</h2>
+    </div>
   </footer>
 </template>
 
@@ -97,5 +110,21 @@ footer {
 
 ul {
   list-style-type: none;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.logo {
+  margin: 0 auto;
+  font-size: 3rem;
+  color: var(--brand-color);
 }
 </style>
