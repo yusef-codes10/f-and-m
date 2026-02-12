@@ -60,8 +60,7 @@ const addToFavorite = () => {
     <div class="content">
       <p>{{ product.status }}</p>
       <i
-        :class="isHoverd ? 'bi bi-heart-fill' : 'bi bi-heart'"
-        :class="isFavorite ? 'bi bi-heart-fill' : 'bi bi-heart'"
+        :class="['bi', isHoverd || isFavorite ? 'bi bi-heart-fill' : 'bi bi-heart']"
         @mouseenter="isHoverd = true"
         @mouseleave="isHoverd = false"
         @click="addToFavorite"
