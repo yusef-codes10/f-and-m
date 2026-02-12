@@ -35,6 +35,12 @@ const previousImage = (product) => {
     currentImageIndex.value = product.preview.length - 1
   }
 }
+
+// add to favorite functionality
+const isFavorite = ref(false)
+const addToFavorite = () => {
+  isFavorite.value = !isFavorite.value
+}
 </script>
 
 <template>
@@ -55,8 +61,10 @@ const previousImage = (product) => {
       <p>{{ product.status }}</p>
       <i
         :class="isHoverd ? 'bi bi-heart-fill' : 'bi bi-heart'"
+        :class="isFavorite ? 'bi bi-heart-fill' : 'bi bi-heart'"
         @mouseenter="isHoverd = true"
         @mouseleave="isHoverd = false"
+        @click="addToFavorite"
       ></i>
       <h3>{{ product.title }}</h3>
       <div class="disceiption">
