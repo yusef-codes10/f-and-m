@@ -121,7 +121,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: min(2rem, 8%);
 }
 
 .lang-dark-mode {
@@ -156,6 +156,13 @@ i {
       'legal'
       'links'
       'logo';
+  }
+  .links,
+  .lang-dark-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
   }
 }
 </style>
