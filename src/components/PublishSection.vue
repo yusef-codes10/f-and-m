@@ -60,8 +60,13 @@ import images from '@/data/pub-images.js'
 }
 
 /* styling the images */
+.images-section {
+  display: flex;
+  justify-content: space-around;
+}
+
 .img-container {
-  width: 100%;
+  width: 20%;
   aspect-ratio: 1 / 1;
   margin: 1.5rem;
 }
