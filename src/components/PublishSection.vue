@@ -3,21 +3,28 @@ import images from '@/data/pub-images.js'
 </script>
 
 <template>
-  <div class="images-section">
-    <div class="img-container">
-      <img v-for="img in images" :key="img.id" :src="img.url" alt="" />
+  <div class="publish">
+    <div class="images-section">
+      <div class="img-container" v-for="img in images" :key="img.id">
+        <img :src="img.url" alt="" />
+      </div>
     </div>
-  </div>
-  <div class="cta-section">
-    <p>New arrivals</p>
-    <h1>LATEST CREATIONS</h1>
-    <div class="discover-btn">
-      <button>DISCOVER</button>
+    <div class="cta-section">
+      <p>New arrivals</p>
+      <h1>LATEST CREATIONS</h1>
+      <div class="discover-btn">
+        <button>DISCOVER</button>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.publish {
+  height: 100vh;
+  padding: 3rem;
+}
+
 .cta-section {
   padding: 2rem 4rem;
   /* border: 2px solid red; */
@@ -25,12 +32,14 @@ import images from '@/data/pub-images.js'
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 3rem 0;
 }
 
 .cta-section h1 {
   font-size: clamp(1.3rem, 4vw + 1rem, 2.8rem);
   font-weight: 900;
   color: var(--brand-color);
+  text-align: center;
 }
 
 .cta-section p {
@@ -62,13 +71,13 @@ import images from '@/data/pub-images.js'
 /* styling the images */
 .images-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .img-container {
   width: 20%;
   aspect-ratio: 1 / 1;
-  margin: 1.5rem;
+  /* margin: 1.5rem; */
 }
 
 .img-container img {
