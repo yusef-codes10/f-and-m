@@ -42,8 +42,10 @@ import ToggleBtn from './ToggleBtn.vue'
     </div>
     <hr />
     <div class="links">
-      <p>United States ($) - English</p>
-      <ToggleBtn />
+      <div class="lang-dark-mode">
+        <p>United States ($) - English</p>
+        <ToggleBtn />
+      </div>
       <div class="socials-links">
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
@@ -103,28 +105,40 @@ footer {
 .services,
 .about,
 .legal,
-.links,
-.logo {
+ul {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.lang-dark-mode {
+  display: inline-flex;
+  gap: 3rem;
 }
 
 i {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  margin: 0 1rem;
   cursor: pointer;
 }
 
 .logo {
   margin: 0 auto;
   font-size: 3rem;
+  padding: 2rem;
   color: var(--brand-color);
 }
 
