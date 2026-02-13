@@ -4,7 +4,9 @@ import images from '@/data/pub-images.js'
 
 <template>
   <div class="images-section">
-    <img v-for="img in images" :key="img.id" :src="img.url" alt="" />
+    <div class="img-container">
+      <img v-for="img in images" :key="img.id" :src="img.url" alt="" />
+    </div>
   </div>
   <div class="cta-section">
     <p>New arrivals</p>
@@ -55,5 +57,19 @@ import images from '@/data/pub-images.js'
 .discover-btn button:hover {
   background-color: var(--text-color);
   color: var(--bg-color);
+}
+
+/* styling the images */
+.img-container {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 1.5rem;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 </style>
