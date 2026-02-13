@@ -1,8 +1,10 @@
-<script setup></script>
+<script setup>
+import images from '@/data/pub-images.js'
+</script>
 
 <template>
   <div class="images-section">
-    <img v-for="img in images" :key="img" src="" alt="" />
+    <img v-for="img in images" :key="img.id" :src="img.url" alt="" />
   </div>
   <div class="cta-section">
     <p>New arrivals</p>
