@@ -20,6 +20,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 .logo {
