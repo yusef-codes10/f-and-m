@@ -1,9 +1,12 @@
 <script setup></script>
 
 <template>
+  <div class="images-section">
+    <img v-for="img in images" :key="img" src="" alt="" />
+  </div>
   <div class="cta-section">
-    <p>Elegance in Motion</p>
-    <h1>CASSIA COLLECTION</h1>
+    <p>New arrivals</p>
+    <h1>LATEST CREATIONS</h1>
     <div class="discover-btn">
       <button>DISCOVER</button>
     </div>
