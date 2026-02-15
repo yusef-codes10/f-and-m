@@ -1,6 +1,6 @@
 <script setup>
 import FProduct from './FProduct.vue'
-import shoes from '@/data/women-shoes.js'
+// import shoes from '@/data/women-shoes.js'
 
 import { ref, onMounted } from 'vue'
 
@@ -10,9 +10,13 @@ onMounted(async () => {
   try {
     const response = await fetch('https://fakestoreapi.com/products')
     const data = await response.json()
-    array.value = data.map((product) => {
-      ;(product.id, product.title, product.image, product.price)
-    })
+    array.value = data.map((product) => ({
+      id: product.id,
+      title: product.title,
+      image: product.image,
+      price: product.price,
+    }))
+
     console.log(array.value)
   } catch (error) {
     console.log(error)
@@ -22,7 +26,7 @@ onMounted(async () => {
 
 <template>
   <div class="products">
-    <FProduct v-for="shoe in shoes" :key="shoe.id" :product="shoe" />
+    <FProduct v-for="shoe in array" :key="shoe.id" :product="shoe" />
   </div>
 </template>
 
