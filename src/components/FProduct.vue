@@ -46,8 +46,8 @@ const addToFavorite = (product) => {
 <template>
   <div class="product">
     <div class="preview" @mouseenter="showArrowButton" @mouseleave="showArrowButton">
-      <!-- <img :src="product.preview[currentImageIndex]" alt="" /> -->
-      <img :src="product.image" :alt="product.title" />
+      <img :src="product.preview[currentImageIndex]" alt="" />
+      <!-- <img :src="product.image" :alt="product.title" /> -->
 
       <!-- arrow buttons here that will only show when hovering -->
       <button class="leftBtn" v-show="isShowingArrows" @click="previousImage(product)">
@@ -106,9 +106,7 @@ const addToFavorite = (product) => {
   display: block; /* removes weird gaps */
 
   border-radius: 50% 50% 0 0;
-  box-shadow:
-    0 8px 20px var(--text-color),
-    0 2px 6px var(--text-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
   /* display: none; */
 }

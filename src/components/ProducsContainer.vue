@@ -1,27 +1,27 @@
 <script setup>
 import FProduct from './FProduct.vue'
-// import shoes from '@/data/women-shoes.js'
+import shoes from '@/data/women-shoes.js'
 
-import { ref, onMounted } from 'vue'
+// import { ref, onMounted } from 'vue'
 
 // fetch data from an api
-const array = ref([])
-onMounted(async () => {
-  try {
-    const response = await fetch('https://fakestoreapi.com/products')
-    const data = await response.json()
-    array.value = data
+// const array = ref([])
+// onMounted(async () => {
+//   try {
+//     const response = await fetch('https://fakestoreapi.com/products')
+//     const data = await response.json()
+//     array.value = data
 
-    console.log(array.value)
-  } catch (error) {
-    console.log(error)
-  }
-})
+//     console.log(array.value)
+//   } catch (error) {
+//     console.log(error)
+//   }
+// })
 </script>
 
 <template>
   <div class="products">
-    <FProduct v-for="shoe in array" :key="shoe.id" :product="shoe" />
+    <FProduct v-for="shoe in shoes" :key="shoe.id" :product="shoe" />
   </div>
 </template>
 
