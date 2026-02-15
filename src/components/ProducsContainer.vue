@@ -1,6 +1,23 @@
 <script setup>
 import FProduct from './FProduct.vue'
 import shoes from '@/data/women-shoes.js'
+
+import { ref, onMounted } from 'vue'
+
+// fetch data from an api
+const array = ref([])
+onMounted(async () => {
+  try {
+    const response = await fetch('https://fakestoreapi.com/products')
+    const data = await response.json()
+    array.value = data.map((product) => {
+      ;(product.id, product.title, product.image, product.price)
+    })
+    console.log(array.value)
+  } catch (error) {
+    console.log(error)
+  }
+})
 </script>
 
 <template>
