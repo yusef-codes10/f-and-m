@@ -100,6 +100,24 @@ const womenShoes = [
     availableColor: ['black', 'bianco'],
     isFavorite: false,
   },
+  {
+    id: 7,
+    preview: [
+      '/images/loubi-queen-alta.jpg',
+      '/images/loubi-queen-alta-profile.jpg',
+      '/images/loubi-queen-alta-back.jpg',
+      '/images/loubi-queen-alta-toebox.jpg',
+    ],
+    title: 'Loubi Queen Alta',
+    description: '150 mm Strappy sandals - Patent leather',
+    color: 'Black',
+    for: 'Women',
+    status: 'BestSeller',
+    price: 995,
+    availableColor: ['black', 'bianco'],
+    isFavorite: false,
+  },
+
   //   {
   //     id: 4,
   //     product: 'Pigalle',
