@@ -47,6 +47,7 @@ const addToFavorite = (product) => {
   <div class="product">
     <div class="preview" @mouseenter="showArrowButton" @mouseleave="showArrowButton">
       <!-- <img :src="product.preview[currentImageIndex]" alt="" /> -->
+      <img :src="product.image" :alt="product.title" />
 
       <!-- arrow buttons here that will only show when hovering -->
       <button class="leftBtn" v-show="isShowingArrows" @click="previousImage(product)">
@@ -67,7 +68,7 @@ const addToFavorite = (product) => {
       ></i>
       <h3>{{ product.title }}</h3>
       <div class="disceiption">
-        <p>{{ product.description }}</p>
+        <p>{{ product.description.slice(0, 80) + '...' }}</p>
       </div>
       <div class="price">
         <h3>${{ product.price }}.00</h3>
