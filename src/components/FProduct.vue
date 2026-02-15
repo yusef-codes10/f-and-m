@@ -46,7 +46,7 @@ const addToFavorite = (product) => {
 <template>
   <div class="product">
     <div class="preview" @mouseenter="showArrowButton" @mouseleave="showArrowButton">
-      <img :src="product.preview[currentImageIndex]" alt="" />
+      <!-- <img :src="product.preview[currentImageIndex]" alt="" /> -->
 
       <!-- arrow buttons here that will only show when hovering -->
       <button class="leftBtn" v-show="isShowingArrows" @click="previousImage(product)">

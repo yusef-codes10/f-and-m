@@ -10,12 +10,7 @@ onMounted(async () => {
   try {
     const response = await fetch('https://fakestoreapi.com/products')
     const data = await response.json()
-    array.value = data.map((product) => ({
-      id: product.id,
-      title: product.title,
-      image: product.image,
-      price: product.price,
-    }))
+    array.value = data
 
     console.log(array.value)
   } catch (error) {
