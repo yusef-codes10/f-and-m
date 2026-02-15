@@ -17,6 +17,8 @@ import shoes from '@/data/women-shoes.js'
 //     console.log(error)
 //   }
 // })
+
+// search by name feature
 </script>
 
 <template>
