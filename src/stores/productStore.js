@@ -9,6 +9,12 @@ export const productsStore = defineStore('product', () => {
 
   const favoriteFlag = ref(false)
 
+  // * actions
+  // toggle the favorite should be in the store
+  const toggleFavoriteFilter = () => {
+    favoriteFlag.value = !favoriteFlag.value
+  }
+
   //  * getters
   //   favorite filter (computed)
   const activeFilter = computed(() => {
@@ -22,6 +28,10 @@ export const productsStore = defineStore('product', () => {
 
   return {
     shoes,
+    favoriteFlag,
+
+    // * actions
+    toggleFavoriteFilter,
 
     // * getters
     activeFilter,
