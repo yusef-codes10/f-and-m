@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+import { productsStore } from '@/stores/productStore'
+
+// we have to set the store
+const myStore = productsStore()
+console.log(myStore.shoes)
+</script>
 
 <template>
   <nav>
