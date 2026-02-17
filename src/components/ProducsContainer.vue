@@ -1,6 +1,10 @@
 <script setup>
 import FProduct from './FProduct.vue'
-import shoes from '@/data/women-shoes.js'
+// import shoes from '@/data/women-shoes.js'
+import { productsStore } from '@/stores/productStore'
+
+// we have to set the store
+const myStore = productsStore
 
 // import { ref, onMounted } from 'vue'
 
@@ -23,7 +27,7 @@ import shoes from '@/data/women-shoes.js'
 
 <template>
   <div class="products">
-    <FProduct v-for="shoe in shoes" :key="shoe.id" :product="shoe" />
+    <FProduct v-for="shoe in myStore.womenShoes" :key="shoe.id" :product="shoe" />
   </div>
 </template>
 
