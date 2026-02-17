@@ -4,6 +4,11 @@ import { productsStore } from '@/stores/productStore'
 // we have to set the store
 const myStore = productsStore()
 console.log(myStore.shoes)
+
+const filterFavorite = () => {
+  myStore.favoriteFlag = !myStore.favoriteFlag
+  console.log('clicking on the favorite')
+}
 </script>
 
 <template>
@@ -14,7 +19,7 @@ console.log(myStore.shoes)
       <li><a href="#">Women</a></li>
       <li><a href="#">Men</a></li>
       <li><a href="#">Bags & Accesories</a></li>
-      <li><a href="#">Favorites</a></li>
+      <li @click="filterFavorite">Favorites</li>
     </ul>
     <button>More</button>
   </nav>
