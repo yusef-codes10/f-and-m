@@ -21,14 +21,13 @@ export const productsStore = defineStore('product', () => {
     // show the favorite if the favorite flag is true
     if (favoriteFlag.value) {
       // we filter favorite products
-      shoes.value = shoes.value.filter((shoe) => shoe.isFavorite === true)
+      return shoes.value.filter((shoe) => shoe.isFavorite === true)
     }
-    return shoes
+    return shoes.value
   })
 
   return {
     shoes,
-    favoriteFlag,
 
     // * actions
     toggleFavoriteFilter,
