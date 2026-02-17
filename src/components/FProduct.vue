@@ -1,10 +1,10 @@
 <script setup>
 import { defineProps, ref } from 'vue'
 // import shoes from '@/data/women-shoes.js'
-import { productsStore } from '@/stores/productStore'
+// import { productsStore } from '@/stores/productStore'
 
 // we have to set the store
-const myStore = productsStore()
+// const myStore = productsStore()
 
 const isHoverd = ref(false)
 

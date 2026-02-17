@@ -28,7 +28,7 @@ console.log(myStore.shoes)
 
 <template>
   <div class="products">
-    <FProduct v-for="shoe in myStore.shoes" :key="shoe.id" :product="shoe" />
+    <FProduct v-for="shoe in myStore.activeFilter" :key="shoe.id" :product="shoe" />
   </div>
 </template>
 
