@@ -5,7 +5,7 @@ import { computed, ref } from 'vue'
 
 export const productsStore = defineStore('product', () => {
   // * state
-  const shoes = womenShoes
+  const shoes = ref(womenShoes)
 
   const favoriteFlag = ref(false)
 
@@ -15,7 +15,7 @@ export const productsStore = defineStore('product', () => {
     // show the favorite if the favorite flag is true
     if (favoriteFlag.value) {
       // we filter favorite products
-      shoes = shoes.filter((shoe) => shoe.isFavorite === true)
+      shoes.value = shoes.value.filter((shoe) => shoe.isFavorite === true)
     }
     return shoes
   })
