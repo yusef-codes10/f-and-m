@@ -4,7 +4,8 @@ import FProduct from './FProduct.vue'
 import { productsStore } from '@/stores/productStore'
 
 // we have to set the store
-const myStore = productsStore
+const myStore = productsStore()
+console.log(myStore.shoes)
 
 // import { ref, onMounted } from 'vue'
 
@@ -27,7 +28,7 @@ const myStore = productsStore
 
 <template>
   <div class="products">
-    <FProduct v-for="shoe in myStore.womenShoes" :key="shoe.id" :product="shoe" />
+    <FProduct v-for="shoe in myStore.shoes" :key="shoe.id" :product="shoe" />
   </div>
 </template>
 
