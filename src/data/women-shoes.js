@@ -130,4 +130,4 @@ const womenShoes = [
   //   },
 ]
 
-export default womenShoes
+export { womenShoes }
