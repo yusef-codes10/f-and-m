@@ -1,6 +1,10 @@
 <script setup>
 import { defineProps, ref } from 'vue'
 // import shoes from '@/data/women-shoes.js'
+import { productsStore } from '@/stores/productStore'
+
+// we have to set the store
+const myStore = productsStore()
 
 const isHoverd = ref(false)
 
@@ -40,6 +44,7 @@ const previousImage = (product) => {
 // const isFavorite = ref(false)
 const addToFavorite = (product) => {
   product.isFavorite = !product.isFavorite
+  console.log(product.isFavorite)
 }
 </script>
 
