@@ -3,7 +3,7 @@
 </template>
 
 <style scoped>
-.wonmen {
+.women {
   height: 100dvh;
   background-color: seagreen;
 }

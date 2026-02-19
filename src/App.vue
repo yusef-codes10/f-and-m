@@ -1,7 +1,7 @@
 <script setup>
 import FHeader from './components/FHeader.vue'
 import FFooter from './components/FFooter.vue'
-import HomeView from './views/HomeView.vue'
+// import HomeView from './views/HomeView.vue'
 </script>
 
 <template>
@@ -10,7 +10,8 @@ import HomeView from './views/HomeView.vue'
   <!-- <HeroSection />
   <ProducsContainer />
   <PublishSection /> -->
-  <HomeView />
+  <!-- <HomeView /> -->
+  <RouterView />
   <FFooter />
   <!--  -->
 </template>
