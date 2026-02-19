@@ -8,10 +8,12 @@ import PublishSection from './components/PublishSection.vue'
 
 <template>
   <FHeader />
+  <!-- this is where the viewRouter component is going to be -->
   <HeroSection />
   <ProducsContainer />
   <PublishSection />
   <FFooter />
+  <!--  -->
 </template>
 
 <style scoped></style>
