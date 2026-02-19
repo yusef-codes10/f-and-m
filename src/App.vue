@@ -4,14 +4,16 @@ import HeroSection from './components/HeroSection.vue'
 import ProducsContainer from './components/ProducsContainer.vue'
 import FFooter from './components/FFooter.vue'
 import PublishSection from './components/PublishSection.vue'
+import HomeView from './views/HomeView.vue'
 </script>
 
 <template>
   <FHeader />
   <!-- this is where the viewRouter component is going to be -->
-  <HeroSection />
+  <!-- <HeroSection />
   <ProducsContainer />
-  <PublishSection />
+  <PublishSection /> -->
+  <HomeView />
   <FFooter />
   <!--  -->
 </template>
