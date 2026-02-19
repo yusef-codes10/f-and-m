@@ -11,7 +11,7 @@ console.log(myStore.shoes)
     <h2 class="logo">F&M</h2>
     <ul class="no-mobile">
       <li><a href="#">Products</a></li>
-      <li><a href="#">Women</a></li>
+      <li><RouterLink to="/women">Women</RouterLink></li>
       <li><a href="#">Men</a></li>
       <li><a href="#">Bags & Accesories</a></li>
       <li @click="myStore.toggleFavoriteFilter">Favorites</li>
