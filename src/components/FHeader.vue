@@ -8,7 +8,10 @@ console.log(myStore.shoes)
 
 <template>
   <nav>
-    <h2 class="logo">F&M</h2>
+    <RouterLink to="/"
+      ><h2 class="logo"></h2>
+      F&M</RouterLink
+    >
     <ul class="no-mobile">
       <li><a href="#">Products</a></li>
       <li><RouterLink to="/women">Women</RouterLink></li>
