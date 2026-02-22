@@ -12,7 +12,9 @@ console.log(` fav ${myStore.favoriteShoes}`)
   <div class="favorite">
     This is the favorite products
     <h3>The favorite products</h3>
-    <FProduct v-for="shoe in myStore.favoriteShoes" :key="shoe.id" :product="shoe" />
+    <div class="products">
+      <FProduct v-for="shoe in myStore.favoriteShoes" :key="shoe.id" :product="shoe" />
+    </div>
   </div>
 </template>
 
@@ -20,5 +22,20 @@ console.log(` fav ${myStore.favoriteShoes}`)
 .favorite {
   height: 100dvh;
   background-color: aquamarine;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+}
+
+@media (max-width: 655px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+  }
 }
 </style>

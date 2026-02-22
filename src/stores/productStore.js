@@ -16,10 +16,7 @@ export const productsStore = defineStore('product', () => {
   }
 
   // ! this is for the favorite view
-  const favoriteShoes = computed(() => {
-    shoes.value.filter((shoe) => shoe.isFavorite === true)
-    return shoes.value
-  })
+  const favoriteShoes = computed(() => shoes.value.filter((shoe) => shoe.isFavorite === true))
 
   //  * getters
   //   favorite filter (computed)
