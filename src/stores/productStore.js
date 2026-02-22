@@ -15,9 +15,6 @@ export const productsStore = defineStore('product', () => {
     favoriteFlag.value = !favoriteFlag.value
   }
 
-  // ! this is for the favorite view
-  const favoriteShoes = computed(() => shoes.value.filter((shoe) => shoe.isFavorite === true))
-
   //  * getters
   //   favorite filter (computed)
   const activeFilter = computed(() => {
@@ -28,6 +25,8 @@ export const productsStore = defineStore('product', () => {
     }
     return shoes.value
   })
+  // ! this is for the favorite view
+  const favoriteShoes = computed(() => shoes.value.filter((shoe) => shoe.isFavorite === true))
 
   return {
     shoes,

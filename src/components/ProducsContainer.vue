@@ -32,20 +32,4 @@ console.log(myStore.shoes)
   </div>
 </template>
 
-<style scoped>
-.products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin: 1rem;
-}
-
-@media (max-width: 655px) {
-  .products {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    margin: 1rem;
-  }
-}
-</style>
+<style scoped></style>
