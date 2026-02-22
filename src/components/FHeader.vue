@@ -19,7 +19,12 @@ console.log(myStore.shoes)
       <!-- <li @click="myStore.toggleFavoriteFilter">Favorites</li> -->
       <li><RouterLink :to="{ name: 'Favorites' }">Favorites</RouterLink></li>
     </ul>
-    <button>More</button>
+    <div class="btns">
+      <button class="search-btn">
+        <i class="fa-brands fa-sistrix"></i>
+      </button>
+      <button>More</button>
+    </div>
   </nav>
 </template>
 
@@ -72,5 +77,16 @@ button {
 
 button:hover {
   background-color: var(--brand-hover);
+}
+
+.search-btn {
+  background: none;
+  color: var(--black);
+  transition: all 0.6s;
+}
+
+.search-btn:hover {
+  background: none;
+  color: var(--brand-color);
 }
 </style>
