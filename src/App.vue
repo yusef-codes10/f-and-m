@@ -18,4 +18,6 @@ import FFooter from './components/FFooter.vue'
 
 <style scoped></style>
 
-<!-- -->
+<!--TODO 1-more products (men, women in the women view...) -->
+<!--TODO 2- live search feature and syncing with different views -->
+<!--TODO 3- dynamic routes & product details page -->

@@ -9,6 +9,7 @@ console.log(myStore.shoes)
 import { ref } from 'vue'
 const isSearchMode = ref(false)
 
+const searchQuery = ref('')
 const toggleSearch = () => {
   isSearchMode.value = !isSearchMode.value
 }
@@ -33,7 +34,12 @@ const toggleSearch = () => {
           <i class="fa-brands fa-sistrix"></i>
         </button>
         <!-- TODO we should probably use the slide effect instead -->
-        <input v-show="isSearchMode" type="search" name="" id="" />
+        <input
+          v-show="isSearchMode"
+          type="search"
+          v-model="searchQuery"
+          placeholder="Watcha looking for?"
+        />
       </div>
       <button>More</button>
     </div>
