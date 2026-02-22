@@ -15,6 +15,11 @@ export const productsStore = defineStore('product', () => {
     favoriteFlag.value = !favoriteFlag.value
   }
 
+  // ! this is for the favorite view
+  const favoriteShoes = () => {
+    shoes.value.filter((shoe) => shoe.isFavorite === true)
+  }
+
   //  * getters
   //   favorite filter (computed)
   const activeFilter = computed(() => {
@@ -31,6 +36,7 @@ export const productsStore = defineStore('product', () => {
 
     // * actions
     toggleFavoriteFilter,
+    favoriteShoes,
 
     // * getters
     activeFilter,
