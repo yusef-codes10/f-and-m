@@ -20,9 +20,12 @@ console.log(myStore.shoes)
       <li><RouterLink :to="{ name: 'Favorites' }">Favorites</RouterLink></li>
     </ul>
     <div class="btns">
-      <button class="search-btn">
-        <i class="fa-brands fa-sistrix"></i>
-      </button>
+      <div class="search-section">
+        <button class="search-btn">
+          <i class="fa-brands fa-sistrix"></i>
+        </button>
+        <input type="search" name="" id="" />
+      </div>
       <button>More</button>
     </div>
   </nav>
@@ -88,5 +91,17 @@ button:hover {
 .search-btn:hover {
   background: none;
   color: var(--brand-color);
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input {
+  padding: 10px 12px;
+  outline: none;
 }
 </style>
