@@ -20,7 +20,7 @@ console.log(` fav ${myStore.favoriteShoes}`)
 
 <style scoped>
 .favorite {
-  height: 100dvh;
+  min-height: 100dvh;
   background-color: aquamarine;
 }
 </style>

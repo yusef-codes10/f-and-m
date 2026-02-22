@@ -4,7 +4,7 @@
 
 <style scoped>
 .bags {
-  height: 100dvh;
+  min-height: 100dvh;
   background-color: crimson;
 }
 </style>
