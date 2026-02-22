@@ -1,5 +1,6 @@
 // this is the router file
 import HomeView from '@/views/HomeView.vue'
+import MenView from '@/views/menView.vue'
 import WomenView from '@/views/WomenView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -11,8 +12,13 @@ const routes = [
   },
   {
     path: '/women',
-    name: 'women',
+    name: 'Women',
     component: WomenView,
+  },
+  {
+    path: '/men',
+    name: 'Men',
+    component: MenView,
   },
 ]
 

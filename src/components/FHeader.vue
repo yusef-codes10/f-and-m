@@ -13,9 +13,8 @@ console.log(myStore.shoes)
       F&M</RouterLink
     >
     <ul class="no-mobile">
-      <li><a href="#">Products</a></li>
       <li><RouterLink to="/women">Women</RouterLink></li>
-      <li><a href="#">Men</a></li>
+      <li><RouterLink to="/men">Men</RouterLink></li>
       <li><a href="#">Bags & Accesories</a></li>
       <li @click="myStore.toggleFavoriteFilter">Favorites</li>
     </ul>
