@@ -32,6 +32,7 @@ const toggleSearch = () => {
         <button @click="toggleSearch" class="search-btn">
           <i class="fa-brands fa-sistrix"></i>
         </button>
+        <!-- TODO we should probably use the slide effect instead -->
         <input v-show="isSearchMode" type="search" name="" id="" />
       </div>
       <button>More</button>
