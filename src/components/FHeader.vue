@@ -4,6 +4,14 @@ import { productsStore } from '@/stores/productStore'
 // we have to set the store
 const myStore = productsStore()
 console.log(myStore.shoes)
+
+// search functionality
+import { ref } from 'vue'
+const isSearchMode = ref(false)
+
+const toggleSearch = () => {
+  isSearchMode.value = !isSearchMode.value
+}
 </script>
 
 <template>
@@ -21,10 +29,10 @@ console.log(myStore.shoes)
     </ul>
     <div class="btns">
       <div class="search-section">
-        <button class="search-btn">
+        <button @click="toggleSearch" class="search-btn">
           <i class="fa-brands fa-sistrix"></i>
         </button>
-        <input type="search" name="" id="" />
+        <input v-show="isSearchMode" type="search" name="" id="" />
       </div>
       <button>More</button>
     </div>
