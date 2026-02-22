@@ -1,4 +1,5 @@
 // this is the router file
+import BagsView from '@/views/BagsView.vue'
 import HomeView from '@/views/HomeView.vue'
 import MenView from '@/views/menView.vue'
 import WomenView from '@/views/WomenView.vue'
@@ -19,6 +20,11 @@ const routes = [
     path: '/men',
     name: 'Men',
     component: MenView,
+  },
+  {
+    path: '/bags',
+    name: 'Bags',
+    component: BagsView,
   },
 ]
 

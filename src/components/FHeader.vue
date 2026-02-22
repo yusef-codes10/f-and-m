@@ -15,7 +15,7 @@ console.log(myStore.shoes)
     <ul class="no-mobile">
       <li><RouterLink to="/women">Women</RouterLink></li>
       <li><RouterLink to="/men">Men</RouterLink></li>
-      <li><a href="#">Bags & Accesories</a></li>
+      <li><RouterLink to="/bags">Bags</RouterLink></li>
       <li @click="myStore.toggleFavoriteFilter">Favorites</li>
     </ul>
     <button>More</button>
