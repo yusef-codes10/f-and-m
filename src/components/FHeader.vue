@@ -16,7 +16,8 @@ console.log(myStore.shoes)
       <li><RouterLink :to="{ name: 'Women' }">Women</RouterLink></li>
       <li><RouterLink :to="{ name: 'Men' }">Men</RouterLink></li>
       <li><RouterLink :to="{ name: 'Bags' }">Bags & Accesories</RouterLink></li>
-      <li @click="myStore.toggleFavoriteFilter">Favorites</li>
+      <!-- <li @click="myStore.toggleFavoriteFilter">Favorites</li> -->
+      <li><RouterLink :to="{ name: 'Favorites' }">Favorites</RouterLink></li>
     </ul>
     <button>More</button>
   </nav>
