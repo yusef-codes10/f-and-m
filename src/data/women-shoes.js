@@ -98,7 +98,7 @@ const womenShoes = [
     status: 'BestSeller',
     price: 995,
     availableColor: ['black', 'bianco'],
-    isFavorite: false,
+    isFavorite: true,
   },
   {
     id: 7,

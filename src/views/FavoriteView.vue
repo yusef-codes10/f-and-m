@@ -5,7 +5,7 @@ import { productsStore } from '@/stores/productStore'
 
 // we have to set the store
 const myStore = productsStore()
-console.log(myStore.shoes)
+console.log(` fav ${myStore.favoriteShoes}`)
 </script>
 
 <template>
