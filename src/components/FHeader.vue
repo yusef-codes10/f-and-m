@@ -108,8 +108,19 @@ button:hover {
   gap: 0.5rem;
 }
 
+.search-section {
+  position: relative; /* Acts as the anchor for the input */
+  display: flex;
+  align-items: center;
+}
+
 input {
+  position: absolute;
+  right: 100%; /* Spawns to the left of the button */
+  margin-right: 10px;
   padding: 10px 12px;
-  outline: none;
+  z-index: 10;
+  /* Optional: Add a simple fade-in */
+  transition: opacity 0.3s ease;
 }
 </style>
