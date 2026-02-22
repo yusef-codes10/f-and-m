@@ -13,9 +13,9 @@ console.log(myStore.shoes)
       F&M</RouterLink
     >
     <ul class="no-mobile">
-      <li><RouterLink to="/women">Women</RouterLink></li>
-      <li><RouterLink to="/men">Men</RouterLink></li>
-      <li><RouterLink to="/bags">Bags</RouterLink></li>
+      <li><RouterLink :to="{ name: 'Women' }">Women</RouterLink></li>
+      <li><RouterLink :to="{ name: 'Men' }">Men</RouterLink></li>
+      <li><RouterLink :to="{ name: 'Bags' }">Bags & Accesories</RouterLink></li>
       <li @click="myStore.toggleFavoriteFilter">Favorites</li>
     </ul>
     <button>More</button>
