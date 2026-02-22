@@ -12,7 +12,7 @@ console.log(myStore.shoes)
   <div class="favorite">
     This is the favorite products
     <h3>The favorite products</h3>
-    <FProduct v-for="shoe in myStore.activeFilter" :key="shoe.id" :product="shoe" />
+    <FProduct v-for="shoe in myStore.favoriteShoes" :key="shoe.id" :product="shoe" />
   </div>
 </template>
 
