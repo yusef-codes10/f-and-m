@@ -1,8 +1,18 @@
 <!-- this is the product view page -->
-<script setup></script>
+<script setup>
+// we have to import the route here
+// ! there are two ways to access the url params
+</script>
 <template>
-  <div>
+  <div class="details">
     <h1>Product details</h1>
+    <!-- here we just access the url slug -->
+    <p>Your product is:</p>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+.details {
+  min-height: 100vh;
+  background-color: burlywood;
+}
+</style>
