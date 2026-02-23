@@ -72,7 +72,9 @@ const addToFavorite = (product) => {
         @click="addToFavorite(product)"
       ></i>
       <h3>
-        <RouterLink :to="{ name: 'Product', params: {} }">{{ product.title }}</RouterLink>
+        <RouterLink :to="{ name: 'Product', params: { slug: product.slug } }">{{
+          product.title
+        }}</RouterLink>
       </h3>
       <div class="disceiption">
         <p>{{ product.description.slice(0, 80) + '...' }}</p>
