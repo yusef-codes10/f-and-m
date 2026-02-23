@@ -38,6 +38,9 @@ console.log(findTheProduct)
       <div class="img">
         <img :src="findTheProduct().preview[0]" alt="" />
       </div>
+      <div class="product-details">
+        <h2 class="title">{{ findTheProduct().title }}</h2>
+      </div>
     </div>
   </div>
 </template>
@@ -59,6 +62,11 @@ console.log(findTheProduct)
 
 .img img {
   width: 100%;
+}
+
+.product-details {
+  background-color: green;
+  width: 30%;
 }
 </style>
 
