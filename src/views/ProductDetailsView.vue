@@ -2,6 +2,11 @@
 <script setup>
 // we have to import the route here
 // ! there are two ways to access the url params
+// ! 1- useing the route params
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+console.log(route.params.slug)
 </script>
 <template>
   <div class="details">
