@@ -33,6 +33,7 @@ console.log(findTheProduct)
     <h1>Product details</h1>
     <!-- here we just access the url slug -->
     <p>Your product is: {{ findTheProduct().title }}</p>
+    {{ $route.params.slug }}
   </div>
 </template>
 <style scoped>
