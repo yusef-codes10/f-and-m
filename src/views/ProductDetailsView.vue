@@ -10,7 +10,7 @@
 
 // now lets's pass it as an arg
 import { defineProps } from 'vue'
-defineProps({
+const { slug } = defineProps({
   slug: {
     type: String,
     required: true,
