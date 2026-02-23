@@ -41,3 +41,5 @@ console.log(findTheProduct)
   background-color: burlywood;
 }
 </style>
+
+<!-- TODO optimization: use computed property instead of the called function -->
