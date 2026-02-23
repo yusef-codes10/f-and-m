@@ -30,10 +30,10 @@ console.log(findTheProduct)
 </script>
 <template>
   <div class="details">
-    <h1>Product details</h1>
-    <!-- here we just access the url slug -->
+    <!-- <h1>Product details</h1>
+
     <p>Your product is: {{ findTheProduct().title }}</p>
-    {{ $route.params.slug }}
+    {{ $route.params.slug }} -->
     <div class="product-preview">
       <div class="img">
         <img :src="findTheProduct().preview[0]" alt="" />
@@ -53,6 +53,8 @@ console.log(findTheProduct)
 .product-preview {
   width: 100%;
   background-color: tomato;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .img {
@@ -67,6 +69,7 @@ console.log(findTheProduct)
 .product-details {
   background-color: green;
   width: 30%;
+  padding: 2rem;
 }
 </style>
 
