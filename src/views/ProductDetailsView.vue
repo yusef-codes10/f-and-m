@@ -75,25 +75,28 @@ console.log(findTheProduct)
 }
 
 .images-section {
-  width: 70%; /* because product-details is 30% */
+  width: 60%; /* because product-details is 30% */
   height: 100vh;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 .product-details {
   background-color: green;
-  width: 30%;
+  width: 40%;
   padding: 2rem;
 }
 
 .img-gallery {
   flex: 0 0 20%;
   display: flex;
+  justify-content: space-around;
   gap: 10px;
   overflow-x: auto; /* horizontal scroll */
   overflow-y: hidden;
   align-items: center;
+  margin: 0 auto;
 }
 
 .img-gallery img {
