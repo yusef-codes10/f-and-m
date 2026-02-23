@@ -34,11 +34,15 @@ console.log(findTheProduct)
     <!-- here we just access the url slug -->
     <p>Your product is: {{ findTheProduct().title }}</p>
     {{ $route.params.slug }}
+
+    <div class="img">
+      <img :src="findTheProduct().preview[0]" alt="" />
+    </div>
   </div>
 </template>
 <style scoped>
 .details {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   background-color: burlywood;
 }
 </style>
