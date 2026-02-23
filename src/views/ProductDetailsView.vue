@@ -53,6 +53,12 @@ console.log(findTheProduct)
 }
 
 .img {
+  width: 60%;
+  padding: 2rem;
+}
+
+.img img {
+  width: 100%;
 }
 </style>
 
