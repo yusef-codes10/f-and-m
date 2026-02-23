@@ -39,6 +39,9 @@ console.log(findTheProduct)
         <div class="img">
           <img :src="findTheProduct().preview[0]" alt="" />
         </div>
+        <div class="img-gallery">
+          <img v-for="m in findTheProduct().preview" :key="m" :src="m" alt="" />
+        </div>
       </div>
       <div class="product-details">
         <h2 class="title">{{ findTheProduct().title }}</h2>
