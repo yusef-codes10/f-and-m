@@ -16,6 +16,7 @@ defineProps({
     required: true,
   },
 })
+console.log(slug)
 
 // importing the pinia store
 import { productsStore } from '@/stores/productStore'
@@ -24,7 +25,7 @@ import { productsStore } from '@/stores/productStore'
 const myStore = productsStore()
 console.log(myStore.shoes)
 
-const findTheProduct = () => myStore.shoes.find((shoe) => shoe.slug === route.params.slug)
+const findTheProduct = () => myStore.shoes.find((shoe) => shoe.slug === slug)
 console.log(findTheProduct)
 </script>
 <template>
