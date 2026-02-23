@@ -38,10 +38,10 @@ const womenShoes = [
   {
     id: 3,
     preview: [
-      '/images/hot-chick-main.jpg',
-      '/images/hot-chick-profile.jpg',
-      '/images/hot-chick-back.jpg',
-      '/images/hot-chick-toebox.jpg',
+      '/images/hot-chick-bianco.jpg',
+      '/images/hot-chick-bianco-profile.jpg',
+      '/images/hot-chick-bianco-back.jpg',
+      '/images/hot-chick-bianco-toebox.jpg',
     ],
     title: 'Hot Chick',
     description: '100 mm Pumps - Patent calf leather ',
