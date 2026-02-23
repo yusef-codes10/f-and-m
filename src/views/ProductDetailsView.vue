@@ -37,6 +37,14 @@ console.log(findTheProduct)
     <div class="product-preview">
       <div class="img">
         <img :src="findTheProduct().preview[0]" alt="" />
+        <!-- arrow buttons here that will only show when hovering -->
+        <button class="leftBtn" v-show="isShowingArrows" @click="previousImage(product)">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button class="rightBtn" v-show="isShowingArrows" @click="nextImage(product)">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
       <div class="product-details">
         <h2 class="title">{{ findTheProduct().title }}</h2>
