@@ -87,10 +87,12 @@ console.log(findTheProduct)
 }
 
 .img-gallery {
+  flex: 0 0 20%;
   display: flex;
-  max-height: 30%;
-  width: 60%;
-  overflow: none;
+  gap: 10px;
+  overflow-x: auto; /* horizontal scroll */
+  overflow-y: hidden;
+  align-items: center;
 }
 </style>
 
