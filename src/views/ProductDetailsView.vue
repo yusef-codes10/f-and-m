@@ -80,6 +80,12 @@ console.log(findTheProduct)
   width: 30%;
   padding: 2rem;
 }
+
+.img-gallery {
+  display: flex;
+  max-height: 30%;
+  width: 60%;
+}
 </style>
 
 <!-- TODO optimization: use computed property instead of the called function -->
