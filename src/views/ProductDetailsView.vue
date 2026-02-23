@@ -3,10 +3,19 @@
 // we have to import the route here
 // ! there are two ways to access the url params
 // ! 1- useing the route params
-import { useRoute } from 'vue-router'
+// import { useRoute } from 'vue-router'
 
-const route = useRoute()
-console.log(route.params.slug)
+// const route = useRoute()
+// console.log(route.params.slug)
+
+// now lets's pass it as an arg
+import { defineProps } from 'vue'
+defineProps({
+  slug: {
+    type: String,
+    required: true,
+  },
+})
 
 // importing the pinia store
 import { productsStore } from '@/stores/productStore'
