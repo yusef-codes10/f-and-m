@@ -3,6 +3,7 @@ import BagsView from '@/views/BagsView.vue'
 import FavoriteView from '@/views/FavoriteView.vue'
 import HomeView from '@/views/HomeView.vue'
 import MenView from '@/views/menView.vue'
+import ProductDetailsView from '@/views/ProductDetailsView.vue'
 import WomenView from '@/views/WomenView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -31,6 +32,12 @@ const routes = [
     path: '/favorites',
     name: 'Favorites',
     component: FavoriteView,
+  },
+  // * Dynamic route
+  {
+    path: '/product/:slug',
+    name: 'Product',
+    component: ProductDetailsView,
   },
 ]
 

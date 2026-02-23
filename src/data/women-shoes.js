@@ -15,6 +15,7 @@ const womenShoes = [
     price: 945,
     availableColor: ['black', 'blush'],
     isFavorite: false,
+    slug: 'so-kate-120mm',
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ const womenShoes = [
     price: 1045,
     availableColor: ['lin-platin', 'silver'],
     isFavorite: false,
+    slug: 'miss-z-100',
   },
   {
     id: 3,
@@ -49,6 +51,7 @@ const womenShoes = [
     price: 945,
     availableColor: ['black', 'blush', 'bianco'],
     isFavorite: false,
+    slug: 'hot-chick-100',
   },
   {
     id: 4,
@@ -66,6 +69,7 @@ const womenShoes = [
     price: 965,
     availableColor: ['black', 'blush'],
     isFavorite: false,
+    slug: 'sporty-kate-100',
   },
   {
     id: 5,
@@ -82,6 +86,7 @@ const womenShoes = [
     price: 1295,
     availableColor: ['black'],
     isFavorite: false,
+    slug: 'so-kate-booty-100',
   },
   {
     id: 6,
@@ -99,6 +104,7 @@ const womenShoes = [
     price: 995,
     availableColor: ['black', 'bianco'],
     isFavorite: true,
+    slug: 'loubi-queen-100',
   },
   {
     id: 7,
@@ -116,6 +122,7 @@ const womenShoes = [
     price: 995,
     availableColor: ['black', 'bianco'],
     isFavorite: false,
+    slug: 'loubi-queen-alta-150',
   },
 
   //   {
