@@ -34,9 +34,10 @@ console.log(findTheProduct)
     <!-- here we just access the url slug -->
     <p>Your product is: {{ findTheProduct().title }}</p>
     {{ $route.params.slug }}
-
-    <div class="img">
-      <img :src="findTheProduct().preview[0]" alt="" />
+    <div class="product-preview">
+      <div class="img">
+        <img :src="findTheProduct().preview[0]" alt="" />
+      </div>
     </div>
   </div>
 </template>
@@ -44,6 +45,14 @@ console.log(findTheProduct)
 .details {
   min-height: calc(100vh - 80px);
   background-color: burlywood;
+}
+
+.product-preview {
+  width: 100%;
+  background-color: tomato;
+}
+
+.img {
 }
 </style>
 
