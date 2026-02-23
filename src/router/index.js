@@ -38,6 +38,7 @@ const routes = [
     path: '/product/:slug',
     name: 'Product',
     component: ProductDetailsView,
+    props: true,
   },
 ]
 
