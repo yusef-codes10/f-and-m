@@ -108,3 +108,5 @@ console.log(findTheProduct)
 </style>
 
 <!-- TODO optimization: use computed property instead of the called function -->
+<!-- TODO: clickable image gallery for preview -->
+<!-- TODO: more details for the product-->
