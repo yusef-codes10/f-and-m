@@ -75,7 +75,7 @@ console.log(findTheProduct)
 }
 
 .images-section {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -93,6 +93,13 @@ console.log(findTheProduct)
   overflow-x: auto; /* horizontal scroll */
   overflow-y: hidden;
   align-items: center;
+}
+
+.img-gallery img {
+  height: 100%;
+  aspect-ratio: 1 / 1; /* square thumbnails */
+  object-fit: cover;
+  flex-shrink: 0; /* prevents shrinking */
 }
 </style>
 
