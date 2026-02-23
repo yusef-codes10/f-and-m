@@ -72,7 +72,9 @@ console.log(findTheProduct)
 }
 
 .images-section {
-  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-details {
@@ -85,6 +87,7 @@ console.log(findTheProduct)
   display: flex;
   max-height: 30%;
   width: 60%;
+  overflow: none;
 }
 </style>
 
