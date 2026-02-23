@@ -63,8 +63,9 @@ console.log(findTheProduct)
 }
 
 .img {
+  flex: 0 0 80%; /* takes 80% of container height */
+  overflow: hidden;
   width: 100%;
-  padding: 2rem;
 }
 
 .img img {
