@@ -71,7 +71,9 @@ const addToFavorite = (product) => {
         @mouseleave="isHoverd = false"
         @click="addToFavorite(product)"
       ></i>
-      <h3>{{ product.title }}</h3>
+      <h3>
+        <RouterLink>{{ product.title }}</RouterLink>
+      </h3>
       <div class="disceiption">
         <p>{{ product.description.slice(0, 80) + '...' }}</p>
       </div>
@@ -195,5 +197,11 @@ button {
   top: 50%; /* not bottom */
   right: 0;
   /* transform: translateY(-50%); */
+}
+
+h3 a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-color);
 }
 </style>
