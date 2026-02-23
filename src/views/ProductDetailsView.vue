@@ -75,6 +75,7 @@ console.log(findTheProduct)
 }
 
 .images-section {
+  width: 70%; /* because product-details is 30% */
   height: 100vh;
   display: flex;
   flex-direction: column;
