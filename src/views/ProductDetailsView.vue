@@ -68,12 +68,12 @@ const switchPreview = (img) => {
 <style scoped>
 .details {
   min-height: calc(100vh - 80px);
-  background-color: burlywood;
+  /* background-color: burlywood; */
 }
 
 .product-preview {
   width: 100%;
-  background-color: tomato;
+  /* background-color: tomato; */
   display: flex;
   gap: 0.5rem;
 }
@@ -99,7 +99,7 @@ const switchPreview = (img) => {
 }
 
 .product-details {
-  background-color: green;
+  /* background-color: green; */
   width: 40%;
   padding: 2rem;
 }
@@ -120,6 +120,9 @@ const switchPreview = (img) => {
   aspect-ratio: 1 / 1; /* square thumbnails */
   object-fit: cover;
   flex-shrink: 0; /* prevents shrinking */
+
+  /* make a little grayish overlay */
+  opacity: 0.5;
 }
 
 p {
