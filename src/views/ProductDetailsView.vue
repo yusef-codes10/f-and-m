@@ -27,6 +27,11 @@ console.log(myStore.shoes)
 
 const findTheProduct = () => myStore.shoes.find((shoe) => shoe.slug === slug)
 console.log(findTheProduct)
+
+// * switch preview function
+const switchPreview = () => {
+  console.log('you clicked, duh')
+}
 </script>
 <template>
   <div class="details">
@@ -40,7 +45,13 @@ console.log(findTheProduct)
           <img :src="findTheProduct().preview[0]" alt="" />
         </div>
         <div class="img-gallery">
-          <img v-for="m in findTheProduct().preview" :key="m" :src="m" alt="" />
+          <img
+            @click="switchPreview"
+            v-for="m in findTheProduct().preview"
+            :key="m"
+            :src="m"
+            alt=""
+          />
         </div>
       </div>
       <div class="product-details">
