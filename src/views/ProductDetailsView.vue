@@ -143,7 +143,7 @@ p {
 
 /* we better bind classes instead */
 .active {
-  opacity: 1;
+  opacity: 1 !important;
   transition: 0.3s;
 }
 </style>
