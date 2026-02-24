@@ -34,6 +34,9 @@ const switchPreview = (img) => {
   currentImageIndex.value = img.id - 1
   console.log(`the id is ${currentImageIndex.value}`)
 }
+
+// properties for img opacity
+const isActive = ref(false)
 </script>
 <template>
   <div class="details">
@@ -53,6 +56,7 @@ const switchPreview = (img) => {
             :key="m.id"
             :src="m.url"
             alt="m.id"
+            :class="{ active: isActive, inactive: !isActive }"
           />
         </div>
       </div>
@@ -122,12 +126,21 @@ const switchPreview = (img) => {
   flex-shrink: 0; /* prevents shrinking */
 
   /* make a little grayish overlay */
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 p {
   color: var(--secondary-text);
   /* margin: 0.5rem 1rem; */
+}
+
+/* we better bind classes instead */
+.active {
+  opacity: 1;
+}
+
+.inactive {
+  opacity: 0.5;
 }
 </style>
 
