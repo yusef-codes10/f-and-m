@@ -44,15 +44,15 @@ const switchPreview = (img) => {
     <div class="product-preview">
       <div class="images-section">
         <div class="img">
-          <img :src="findTheProduct().preview[currentImageId]" alt="" />
+          <img :src="findTheProduct().preview.currentImageId" alt="" />
         </div>
         <div class="img-gallery">
           <img
             @click="switchPreview(m)"
             v-for="m in findTheProduct().preview"
-            :key="m"
-            :src="m"
-            alt=""
+            :key="m.id"
+            :src="m.url"
+            alt="m.id"
           />
         </div>
       </div>
