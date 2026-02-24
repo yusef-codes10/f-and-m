@@ -2,10 +2,10 @@ const womenShoes = [
   {
     id: 1,
     preview: [
-      '/images/so-kate.jpg',
-      '/images/so-kate-profile.jpg',
-      '/images/so-kate-back.jpg',
-      '/images/so-kate-toebox.jpg',
+      { id: 1, url: '/images/so-kate.jpg' },
+      { id: 2, url: '/images/so-kate-profile.jpg' },
+      { id: 3, url: '/images/so-kate-back.jpg' },
+      { id: 4, url: '/images/so-kate-toebox.jpg' },
     ],
     title: 'So Kate',
     description: '120 mm Pumps - Patent calf leather -',
@@ -20,10 +20,10 @@ const womenShoes = [
   {
     id: 2,
     preview: [
-      '/images/miss-z-main.jpg',
-      '/images/miss-z-profile.jpg',
-      '/images/miss-z-back.jpg',
-      '/images/miss-z-toebox.jpg',
+      { id: 1, url: '/images/miss-z-main.jpg' },
+      { id: 2, url: '/images/miss-z-profile.jpg' },
+      { id: 3, url: '/images/miss-z-back.jpg' },
+      { id: 4, url: '/images/miss-z-toebox.jpg' },
     ],
     title: 'Miss Z',
     description: '100 mm Pumps - Diamond-shaped laminated lamb nappa leather - ',
@@ -38,10 +38,10 @@ const womenShoes = [
   {
     id: 3,
     preview: [
-      '/images/hot-chick-bianco.jpg',
-      '/images/hot-chick-bianco-profile.jpg',
-      '/images/hot-chick-bianco-back.jpg',
-      '/images/hot-chick-bianco-toebox.jpg',
+      { id: 1, url: '/images/hot-chick-bianco.jpg' },
+      { id: 2, url: '/images/hot-chick-bianco-profile.jpg' },
+      { id: 3, url: '/images/hot-chick-bianco-back.jpg' },
+      { id: 4, url: '/images/hot-chick-bianco-toebox.jpg' },
     ],
     title: 'Hot Chick',
     description: '100 mm Pumps - Patent calf leather ',
@@ -56,10 +56,10 @@ const womenShoes = [
   {
     id: 4,
     preview: [
-      '/images/sporty-so-kate.jpg',
-      '/images/sporty-so-kate-profile.jpg',
-      '/images/sporty-so-kate-back.jpg',
-      '/images/sporty-so-kate-toebox.jpg',
+      { id: 1, url: '/images/sporty-so-kate.jpg' },
+      { id: 2, url: '/images/sporty-so-kate-profile.jpg' },
+      { id: 3, url: '/images/sporty-so-kate-back.jpg' },
+      { id: 4, url: '/images/sporty-so-kate-toebox.jpg' },
     ],
     title: 'Sporty Kate',
     description: '100 mm Pumps - Lamb nappa leather ',
@@ -74,9 +74,9 @@ const womenShoes = [
   {
     id: 5,
     preview: [
-      '/images/so-kate-booty.jpg',
-      '/images/so-kate-booty-profile.jpg',
-      '/images/so-kate-booty-back.jpg',
+      { id: 1, url: '/images/so-kate-booty.jpg' },
+      { id: 2, url: '/images/so-kate-booty-profile.jpg' },
+      { id: 3, url: '/images/so-kate-booty-back.jpg' },
     ],
     title: 'So Kate Booty',
     description: '100 mm Low boots - Calf leather',
@@ -91,10 +91,10 @@ const womenShoes = [
   {
     id: 6,
     preview: [
-      '/images/loubi-queen.jpg',
-      '/images/loubi-queen-profile.jpg',
-      '/images/loubi-queen-back.jpg',
-      '/images/loubi-queen-toebox.jpg',
+      { id: 1, url: '/images/loubi-queen.jpg' },
+      { id: 2, url: '/images/loubi-queen-profile.jpg' },
+      { id: 3, url: '/images/loubi-queen-back.jpg' },
+      { id: 4, url: '/images/loubi-queen-toebox.jpg' },
     ],
     title: 'Loubi Queen',
     description: '100 mm Sandals - Nappa leather',
@@ -109,10 +109,10 @@ const womenShoes = [
   {
     id: 7,
     preview: [
-      '/images/loubi-queen-alta.jpg',
-      '/images/loubi-queen-alta-profile.jpg',
-      '/images/loubi-queen-alta-back.jpg',
-      '/images/loubi-queen-alta-toebox.jpg',
+      { id: 1, url: '/images/loubi-queen-alta.jpg' },
+      { id: 2, url: '/images/loubi-queen-alta-profile.jpg' },
+      { id: 3, url: '/images/loubi-queen-alta-back.jpg' },
+      { id: 4, url: '/images/loubi-queen-alta-toebox.jpg' },
     ],
     title: 'Loubi Queen Alta',
     description: '150 mm Strappy sandals - Patent leather',
@@ -124,17 +124,6 @@ const womenShoes = [
     isFavorite: false,
     slug: 'loubi-queen-alta-150',
   },
-
-  //   {
-  //     id: 4,
-  //     product: 'Pigalle',
-  //     description: '85 mm Pumps - Nappa leather',
-  //     color: 'Black',
-  //     for: 'Women',
-  //     status: 'Sold out',
-  //     price: '',
-  //     availableColor: ['Black'],
-  //   },
 ]
 
 export default womenShoes

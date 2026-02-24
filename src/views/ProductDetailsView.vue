@@ -30,8 +30,9 @@ console.log(findTheProduct)
 
 // * switch preview function
 const currentImageId = ref(1)
-const switchPreview = () => {
-  console.log('you clicked, duh')
+const switchPreview = (img) => {
+  currentImageId.value = img.preview.id
+  console.log(`the id is ${currentImageId.value}`)
 }
 </script>
 <template>
@@ -47,7 +48,7 @@ const switchPreview = () => {
         </div>
         <div class="img-gallery">
           <img
-            @click="switchPreview"
+            @click="switchPreview(m)"
             v-for="m in findTheProduct().preview"
             :key="m"
             :src="m"
