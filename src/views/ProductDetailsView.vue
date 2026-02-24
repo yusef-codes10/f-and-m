@@ -29,10 +29,10 @@ const findTheProduct = () => myStore.shoes.find((shoe) => shoe.slug === slug)
 console.log(findTheProduct)
 
 // * switch preview function
-const currentImageId = ref(0)
+const currentImageIndex = ref(0)
 const switchPreview = (img) => {
-  currentImageId.value = img.id - 1
-  console.log(`the id is ${currentImageId.value}`)
+  currentImageIndex.value = img.id - 1
+  console.log(`the id is ${currentImageIndex.value}`)
 }
 </script>
 <template>
@@ -44,7 +44,7 @@ const switchPreview = (img) => {
     <div class="product-preview">
       <div class="images-section">
         <div class="img">
-          <img :src="findTheProduct().preview[currentImageId].url" alt="" />
+          <img :src="findTheProduct().preview[currentImageIndex].url" alt="" />
         </div>
         <div class="img-gallery">
           <img
