@@ -31,7 +31,7 @@ console.log(findTheProduct)
 // * switch preview function
 const currentImageId = ref(0)
 const switchPreview = (img) => {
-  currentImageId.value = img.id
+  currentImageId.value = img.id - 1
   console.log(`the id is ${currentImageId.value}`)
 }
 </script>
