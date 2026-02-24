@@ -57,7 +57,10 @@ const switchPreview = (img) => {
         </div>
       </div>
       <div class="product-details">
+        <p>{{ findTheProduct().status }}</p>
         <h2 class="title">{{ findTheProduct().title }}</h2>
+        <h3>${{ findTheProduct().price }}</h3>
+        <div class="available-colors">Colors:</div>
       </div>
     </div>
   </div>
@@ -117,6 +120,11 @@ const switchPreview = (img) => {
   aspect-ratio: 1 / 1; /* square thumbnails */
   object-fit: cover;
   flex-shrink: 0; /* prevents shrinking */
+}
+
+p {
+  color: var(--secondary-text);
+  /* margin: 0.5rem 1rem; */
 }
 </style>
 
