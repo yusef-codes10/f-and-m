@@ -61,7 +61,7 @@ const toggleActiveState = () => {
             :key="m.id"
             :src="m.url"
             alt="m.id"
-            :class="{ active: isActive, inactive: !isActive }"
+            :class="{ active: currentImageIndex === m.id - 1 }"
           />
         </div>
       </div>
@@ -131,7 +131,9 @@ const toggleActiveState = () => {
   flex-shrink: 0; /* prevents shrinking */
 
   /* make a little grayish overlay */
-  /* opacity: 0.5; */
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 p {
@@ -142,10 +144,7 @@ p {
 /* we better bind classes instead */
 .active {
   opacity: 1;
-}
-
-.inactive {
-  opacity: 0.5;
+  transition: 0.3s;
 }
 </style>
 
