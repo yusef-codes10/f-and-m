@@ -9,7 +9,7 @@
 // console.log(route.params.slug)
 
 // now lets's pass it as an arg
-import { defineProps } from 'vue'
+import { defineProps, ref } from 'vue'
 const { slug } = defineProps({
   slug: {
     type: String,
@@ -29,6 +29,7 @@ const findTheProduct = () => myStore.shoes.find((shoe) => shoe.slug === slug)
 console.log(findTheProduct)
 
 // * switch preview function
+const currentImageId = ref(1)
 const switchPreview = () => {
   console.log('you clicked, duh')
 }
@@ -42,7 +43,7 @@ const switchPreview = () => {
     <div class="product-preview">
       <div class="images-section">
         <div class="img">
-          <img :src="findTheProduct().preview[0]" alt="" />
+          <img :src="findTheProduct().preview[currentImageId]" alt="" />
         </div>
         <div class="img-gallery">
           <img
