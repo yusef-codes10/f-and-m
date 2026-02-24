@@ -44,7 +44,7 @@ const switchPreview = (img) => {
     <div class="product-preview">
       <div class="images-section">
         <div class="img">
-          <img :src="findTheProduct().preview.currentImageId" alt="" />
+          <img :src="findTheProduct().preview[0].url" alt="" />
         </div>
         <div class="img-gallery">
           <img
