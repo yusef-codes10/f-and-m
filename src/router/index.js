@@ -3,6 +3,7 @@ import BagsView from '@/views/BagsView.vue'
 import FavoriteView from '@/views/FavoriteView.vue'
 import HomeView from '@/views/HomeView.vue'
 import MenView from '@/views/menView.vue'
+import NotFoundView from '@/views/notFoundView.vue'
 import ProductDetailsView from '@/views/ProductDetailsView.vue'
 import WomenView from '@/views/WomenView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
@@ -39,6 +40,13 @@ const routes = [
     name: 'Product',
     component: ProductDetailsView,
     props: true,
+  },
+
+  // * catchAll not found
+  {
+    path: '/:catchAll(.*)',
+    name: 'notFound',
+    component: NotFoundView,
   },
 ]
 
