@@ -32,11 +32,16 @@ console.log(findTheProduct)
 const currentImageIndex = ref(0)
 const switchPreview = (img) => {
   currentImageIndex.value = img.id - 1
+  toggleActiveState()
   console.log(`the id is ${currentImageIndex.value}`)
 }
 
 // properties for img opacity
 const isActive = ref(false)
+
+const toggleActiveState = () => {
+  isActive.value = !isActive.value
+}
 </script>
 <template>
   <div class="details">
