@@ -52,3 +52,5 @@ const bags = [
     slug: 'baggy',
   },
 ]
+
+export default bags
