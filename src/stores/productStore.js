@@ -32,6 +32,7 @@ export const productsStore = defineStore('product', () => {
 
   return {
     shoes,
+    bags,
 
     // * actions
     toggleFavoriteFilter,
