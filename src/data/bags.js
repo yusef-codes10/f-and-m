@@ -20,9 +20,9 @@ const bags = [
   {
     id: 2,
     preview: [
-      { id: 1, url: '/images/bettina.jpg' },
-      { id: 2, url: '/images/bettina-full.jpg' },
-      { id: 3, url: '/images/bettina-top.jpg' },
+      { id: 1, url: '/images/bettina-mini.jpg' },
+      { id: 2, url: '/images/bettina-mini-full.jpg' },
+      { id: 3, url: '/images/bettina-mini-top.jpg' },
     ],
     title: 'Bettina',
     description: 'Top handle bag - calf leather',
