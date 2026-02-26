@@ -5,7 +5,7 @@ import bags from '@/data/bags.js'
 </script>
 
 <template>
-  <div class="bags">This is the bags products
+  <div class="bags products">This is the bags products
     <FProduct v-for="bag in bags" :key="bag.id" :product="bag"/>
   </div>
 </template>
