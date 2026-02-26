@@ -1,13 +1,13 @@
 // the pinia store for products
 import { defineStore } from 'pinia'
 import womenShoes from '@/data/women-shoes.js'
-import bags from '@/data/bags.js'
+import womenBags from '@/data/bags.js'
 import { computed, ref } from 'vue'
 
 export const productsStore = defineStore('product', () => {
   // * state
   const shoes = ref(womenShoes)
-  const bags = ref(bags)
+  const bags = ref(womenBags)
 
   const favoriteFlag = ref(false)
 
