@@ -24,3 +24,5 @@ console.log(` fav ${myStore.favoriteShoes}`)
   background-color: aquamarine;
 }
 </style>
+
+<!-- TODO we need a computed property for the favorite products -->
