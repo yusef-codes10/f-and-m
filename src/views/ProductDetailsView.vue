@@ -25,7 +25,9 @@ import { productsStore } from '@/stores/productStore'
 const myStore = productsStore()
 console.log(myStore.shoes)
 
-const findTheProduct = () => myStore.shoes.find((shoe) => shoe.slug === slug)
+const findTheProduct = () => {
+  
+  myStore.shoes.find((shoe) => shoe.slug === slug)}
 console.log(findTheProduct)
 
 // * switch preview function
@@ -35,6 +37,8 @@ const switchPreview = (img) => {
   // toggleActiveState()
   console.log(`the id is ${currentImageIndex.value}`)
 }
+
+//* helper function to pass the type of the object since we are getting it in the switchPreview() function
 
 // properties for img opacity
 // const isActive = ref(false)
