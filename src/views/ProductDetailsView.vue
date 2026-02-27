@@ -41,7 +41,7 @@ const product = computed(() => {
   const allProducts = [...myStore.bags, ...myStore.shoes]
   console.log(product);
   console.log(allProducts);
-  return 0
+  return allProducts.find(el => el.slug === slug)
 })
 
 // properties for img opacity
