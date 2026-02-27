@@ -25,8 +25,8 @@ import { productsStore } from '@/stores/productStore'
 const myStore = productsStore()
 console.log(myStore.shoes)
 
-const findTheProduct = () => myStore.shoes.find((shoe) => shoe.slug === slug)
-console.log(findTheProduct)
+// const findTheProduct = () => myStore.shoes.find((shoe) => shoe.slug === slug)
+// console.log(findTheProduct)
 
 // * switch preview function
 const currentImageIndex = ref(0)
@@ -39,8 +39,6 @@ const switchPreview = (img) => {
 // best approach is to merge the two array in a computed property
 const product = computed(() => {
   const allProducts = [...myStore.bags, ...myStore.shoes]
-  console.log(product);
-  console.log(allProducts);
   return allProducts.find(el => el.slug === slug)
 })
 
@@ -60,12 +58,12 @@ const product = computed(() => {
     <div class="product-preview">
       <div class="images-section">
         <div class="img">
-          <img :src="findTheProduct().preview[currentImageIndex].url" alt="" />
+          <img :src="product.preview[currentImageIndex].url" alt="" />
         </div>
         <div class="img-gallery">
           <img
             @click="switchPreview(m)"
-            v-for="m in findTheProduct().preview"
+            v-for="m in product.preview"
             :key="m.id"
             :src="m.url"
             alt="m.id"
@@ -74,9 +72,9 @@ const product = computed(() => {
         </div>
       </div>
       <div class="product-details">
-        <p>{{ findTheProduct().status }}</p>
-        <h2 class="title">{{ findTheProduct().title }}</h2>
-        <h3>${{ findTheProduct().price }}</h3>
+        <p>{{ product.status }}</p>
+        <h2 class="title">{{ product.title }}</h2>
+        <h3>${{ product.price }}</h3>
         <div class="available-colors">Colors:</div>
       </div>
     </div>
