@@ -16,6 +16,7 @@ const bags = [
     availableColor: ['black', 'blush'],
     isFavorite: false,
     slug: 'eva',
+    category: 'bag',
   },
   {
     id: 2,
@@ -33,6 +34,7 @@ const bags = [
     availableColor: ['black', 'red'],
     isFavorite: false,
     slug: 'bettina',
+    category: 'bag',
   },
   {
     id: 3,
@@ -50,6 +52,7 @@ const bags = [
     availableColor: ['black', 'white'],
     isFavorite: false,
     slug: 'baggy',
+    category: 'bag',
   },
 ]
 
