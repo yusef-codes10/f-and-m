@@ -37,8 +37,11 @@ const switchPreview = (img) => {
 }
 
 // best approach is to merge the two array in a computed property
-const allProducts = computed({
-
+const product = computed(() => {
+  const allProducts = [...myStore.bags, ...myStore.shoes]
+  console.log(product);
+  console.log(allProducts);
+  return 0
 })
 
 // properties for img opacity
