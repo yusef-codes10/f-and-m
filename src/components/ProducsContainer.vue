@@ -33,3 +33,6 @@ console.log(myStore.shoes)
 </template>
 
 <style scoped></style>
+
+
+<!-- TODO this component is not serving anything, we better switch into the women view -->
