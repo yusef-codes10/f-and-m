@@ -7,6 +7,16 @@ import { productsStore } from '@/stores/productStore'
 const myStore = productsStore()
 console.log(myStore.shoes)
 
+// slice to only 5 products
+import {computed} from 'vue'
+
+const slicedProducts = computed(() => {
+  const sliced = myStore.shoes.slice(0, 6)
+  return sliced
+
+})
+
+
 // import { ref, onMounted } from 'vue'
 
 // fetch data from an api
@@ -28,7 +38,7 @@ console.log(myStore.shoes)
 
 <template>
   <div class="products">
-    <FProduct v-for="shoe in myStore.activeFilter" :key="shoe.id" :product="shoe" />
+    <FProduct v-for="shoe in slicedProducts" :key="shoe.id" :product="shoe" />
   </div>
 </template>
 
