@@ -5,7 +5,7 @@ import { productsStore } from '@/stores/productStore'
 
 // we have to set the store
 const myStore = productsStore()
-console.log(` fav ${myStore.favoriteShoes}`)
+console.log(` fav ${myStore.favoriteProducts}`)
 </script>
 
 <template>
@@ -13,7 +13,7 @@ console.log(` fav ${myStore.favoriteShoes}`)
     This is the favorite products
     <h3>The favorite products</h3>
     <div class="products">
-      <FProduct v-for="shoe in myStore.favoriteShoes" :key="shoe.id" :product="shoe" />
+      <FProduct v-for="product in myStore.favoriteProducts" :key="product.id" :product="product" />
     </div>
   </div>
 </template>
