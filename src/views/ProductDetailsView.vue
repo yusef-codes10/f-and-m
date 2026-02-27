@@ -9,7 +9,7 @@
 // console.log(route.params.slug)
 
 // now lets's pass it as an arg
-import { defineProps, ref } from 'vue'
+import { defineProps, ref, computed } from 'vue'
 const { slug } = defineProps({
   slug: {
     type: String,
@@ -32,16 +32,14 @@ console.log(findTheProduct)
 const currentImageIndex = ref(0)
 const switchPreview = (img) => {
   currentImageIndex.value = img.id - 1
-  whichCategory(img)
   // toggleActiveState()
   console.log(`the id is ${currentImageIndex.value}`)
 }
 
-//* helper function to pass the type of the object since we are getting it in the switchPreview() function
-const whichCategory = (img) => {
-  console.log(` the category ${img.category}`);
-  return img.category
-}
+// best approach is to merge the two array in a computed property
+const allProducts = computed({
+
+})
 
 // properties for img opacity
 // const isActive = ref(false)
