@@ -50,3 +50,7 @@ export const productsStore = defineStore('product', () => {
 // TODO: 1- add the live search btn (search and filter shoes types (pumps, boots..))  2- add more data like men shoes and bags. 3- add select options for the filter add more filter
 
 // TODO: next is adding the live search feature with merging every single array
+
+// ! a note regarding live search
+// 1- the live search results directly rendered in whatever page
+// 2- detaild search where you have a side appear and getting the results on a search=?query
