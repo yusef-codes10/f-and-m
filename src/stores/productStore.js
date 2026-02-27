@@ -29,7 +29,7 @@ export const productsStore = defineStore('product', () => {
   })
   // ! this is for the favorite view
   const favoriteProducts = computed(() => {
-    const allProducts = [...shoes, ...bags]
+    const allProducts = [...shoes.value, ...bags.value]
     allProducts.find(prod => prod.isFavorite === true)
     return allProducts
     })
