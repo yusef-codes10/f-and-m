@@ -2,12 +2,23 @@
 // Access the search query from the route itself
 import { useRoute } from 'vue-router';
 import {computed} from 'vue'
+import { productsStore } from '@/stores/productStore'
+
+// we have to set the store
+const myStore = productsStore()
 
 const route = useRoute()
 
 // better way to access the query is with computed
 const searchQuery = computed( () =>{
     return route.query.q?.toLowerCase() || ''
+})
+
+// filterd products here
+const filterdProducts = computed((product) => {
+    return myStore.allProducts.filter(
+        product.title.toLowerCase().includes(searchQuery.value)
+    )
 })
 
 </script>
