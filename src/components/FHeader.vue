@@ -15,6 +15,12 @@ const toggleSearch = () => {
 }
 
 // we are going to use the key events since the button toggles the search bar
+const submitSearch = (event) => {
+  if (event.key === 'Enter') {
+    console.log(`you searched ${searchQuery.value}`)
+    // Perform actions like closing a modal
+  }
+}
 </script>
 
 <template>
@@ -41,6 +47,7 @@ const toggleSearch = () => {
           type="search"
           v-model="searchQuery"
           placeholder="Watcha looking for?"
+          @keydown="submitSearch"
         />
       </div>
       <button>More</button>
