@@ -13,6 +13,8 @@ const searchQuery = ref('')
 const toggleSearch = () => {
   isSearchMode.value = !isSearchMode.value
 }
+
+// we are going to use the key events since the button toggles the search bar
 </script>
 
 <template>
