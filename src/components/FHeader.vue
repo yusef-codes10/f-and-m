@@ -27,8 +27,7 @@ const submitSearch = () => {
     name: 'Search',
     query: { q: searchQuery.value }
   })
-  console.log(`you searched ${searchQuery.value}`)
-  // Perform actions like closing a modal
+  // TODO: all we need to do is to render the result on the search vue
 }
 </script>
 
