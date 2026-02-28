@@ -5,6 +5,7 @@ import HomeView from '@/views/HomeView.vue'
 import MenView from '@/views/menView.vue'
 import NotFoundView from '@/views/notFoundView.vue'
 import ProductDetailsView from '@/views/ProductDetailsView.vue'
+import SearchResultView from '@/views/SearchResultView.vue'
 import WomenView from '@/views/WomenView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -48,6 +49,12 @@ const routes = [
     name: 'notFound',
     component: NotFoundView,
   },
+  // * the search route
+  {
+    path: '/search',
+    name: 'Search',
+    component: SearchResultView
+  }
 ]
 
 const router = createRouter({
