@@ -1,9 +1,14 @@
 <script setup>
 // Access the search query from the route itself
+import { useRoute } from 'vue-router';
+
+const route = useRoute()
+
+
 </script>
 <template>
     <div class="search">
-        <p>Search results for {{  }}</p>
+        <p>Search results for {{route.query.q}}</p>
     </div>
 </template>
 <style scoped>
