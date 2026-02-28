@@ -15,19 +15,20 @@ const searchQuery = computed( () =>{
 })
 
 // filterd products here
-// const filterdProducts = computed((product) => {
-//     return myStore.allProducts.filter(
-//         product.title.toLowerCase().includes(searchQuery.value)
-//     )
-// })
+const filterdProducts = computed((product) => {
+    const titles = myStore.allProducts.map(e => e.title)
+    return titles.filter(
+        product.title.toLowerCase() === searchQuery.value
+    )
+})
 
 console.log(myStore.allProducts.map(e => e.title));
 </script>
 <template>
     <div class="search">
         <p>Search results for {{searchQuery}}</p>
-        <!-- <div class="result" v-if="filterdProducts.length"></div>
-        <div class="not-found" v-else>Page not found</div> -->
+        <div class="result" v-if="filterdProducts.length"></div>
+        <div class="not-found" v-else>Page not found</div>
     </div>
 </template>
 <style scoped>
