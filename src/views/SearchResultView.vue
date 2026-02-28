@@ -15,10 +15,9 @@ const searchQuery = computed( () =>{
 })
 
 // filterd products here
-const filterdProducts = computed((product) => {
-    const titles = myStore.allProducts.map(e => e.title)
-    return titles.filter(
-        product.title.toLowerCase() === searchQuery.value
+const filterdProducts = computed(() => {
+    return myStore.allProducts.filter( product =>
+        product.title.toLowerCase().includes(searchQuery.value)
     )
 })
 
