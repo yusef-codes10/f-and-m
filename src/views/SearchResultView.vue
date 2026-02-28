@@ -1,14 +1,20 @@
 <script setup>
 // Access the search query from the route itself
 import { useRoute } from 'vue-router';
+import {computed} from 'vue'
 
 const route = useRoute()
 
+// better way to access the query is with computed
+const searchQuery = computed( () =>{
+    return route.query.q?.toLowerCase() || ''
+})
 
 </script>
 <template>
     <div class="search">
-        <p>Search results for {{route.query.q}}</p>
+        <p>Search results for {{searchQuery}}</p>
+        <div class="result" ></div>
     </div>
 </template>
 <style scoped>
