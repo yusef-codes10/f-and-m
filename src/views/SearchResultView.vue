@@ -3,6 +3,7 @@
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
 import { productsStore } from '@/stores/productStore'
+import FProduct from '@/components/FProduct.vue'
 
 // we have to set the store
 const myStore = productsStore()
@@ -26,10 +27,8 @@ console.log(myStore.allProducts.map((e) => e.title))
 <template>
   <div class="search">
     <p>Search results for {{ searchQuery }}</p>
-    <div class="result" v-if="filterdProducts.length">
-      <p v-for="product in filterdProducts" :key="product.id">
-        {{ product.title }}
-      </p>
+    <div class="result products" v-if="filterdProducts.length">
+        <FProduct v-for="product in filterdProducts" :key="product.id" :product="product"/>
     </div>
     <div class="not-found" v-else>Page not found</div>
   </div>
