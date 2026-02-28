@@ -34,6 +34,12 @@ export const productsStore = defineStore('product', () => {
     return fav
     })
 
+    // * all porducts together
+    const allProducts = computed(() => {
+      const products = [...shoes.value, ...bags.value]
+      return products
+    })
+
   return {
     shoes,
     bags,
@@ -44,6 +50,7 @@ export const productsStore = defineStore('product', () => {
 
     // * getters
     activeFilter,
+    allProducts
   }
 })
 
