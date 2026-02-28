@@ -5,6 +5,11 @@ import { productsStore } from '@/stores/productStore'
 const myStore = productsStore()
 console.log(myStore.shoes)
 
+// the ruter for the search
+import { useRouter } from 'vue-router'
+
+const route = useRouter()
+
 // search functionality
 import { ref } from 'vue'
 const isSearchMode = ref(false)
@@ -16,6 +21,12 @@ const toggleSearch = () => {
 
 // we are going to use the key events since the button toggles the search bar
 const submitSearch = () => {
+  if (!searchQuery.value) return
+  // here we push to the router of search
+  route.push({
+    name: 'Search',
+    query: { q: searchQuery.value }
+  })
   console.log(`you searched ${searchQuery.value}`)
   // Perform actions like closing a modal
 }
