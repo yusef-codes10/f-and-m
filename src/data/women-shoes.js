@@ -17,6 +17,8 @@ const womenShoes = [
     isFavorite: false,
     slug: 'so-kate-120mm',
     category: 'women-shoes',
+    // how many physical products are in stock
+    stock: 5,
   },
   {
     id: 2,
@@ -36,6 +38,8 @@ const womenShoes = [
     isFavorite: false,
     slug: 'miss-z-100',
     category: 'women-shoes',
+    // how many physical products are in stock
+    stock: 5,
   },
   {
     id: 3,
@@ -55,6 +59,8 @@ const womenShoes = [
     isFavorite: false,
     slug: 'hot-chick-100',
     category: 'women-shoes',
+    // how many physical products are in stock
+    stock: 5,
   },
   {
     id: 4,
@@ -74,6 +80,8 @@ const womenShoes = [
     isFavorite: false,
     slug: 'sporty-kate-100',
     category: 'women-shoes',
+    // how many physical products are in stock
+    stock: 5,
   },
   {
     id: 5,
@@ -92,6 +100,8 @@ const womenShoes = [
     isFavorite: false,
     slug: 'so-kate-booty-100',
     category: 'women-shoes',
+    // how many physical products are in stock
+    stock: 5,
   },
   {
     id: 6,
@@ -111,6 +121,8 @@ const womenShoes = [
     isFavorite: true,
     slug: 'loubi-queen-100',
     category: 'women-shoes',
+    // how many physical products are in stock
+    stock: 5,
   },
 
   {
@@ -131,6 +143,8 @@ const womenShoes = [
     isFavorite: false,
     slug: 'loubi-queen-alta-150',
     category: 'women-shoes',
+    // how many physical products are in stock
+    stock: 5,
   },
 ]
 
