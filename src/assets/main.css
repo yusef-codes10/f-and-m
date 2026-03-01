@@ -44,6 +44,10 @@ p {
     font-family: var(--main-font);
 }
 
+.title {
+    font-size: clamp(1.5rem, 4vw + 0.75rem, 2.1rem);
+}
+
 @media (max-width: 655px) {
     .no-mobile {
         display: none !important;

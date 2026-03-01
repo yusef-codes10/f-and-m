@@ -117,6 +117,7 @@ const product = computed(() => {
   /* background-color: green; */
   width: 40%;
   padding: 2rem;
+  margin: 2rem 0;
 }
 
 .img-gallery {
