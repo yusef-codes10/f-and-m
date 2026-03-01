@@ -76,6 +76,7 @@ const product = computed(() => {
         <h2 class="title">{{ product.title }}</h2>
         <p class="product-discription">{{ product.description }}</p>
         <h3>${{ product.price }}.00</h3>
+        <button>Add to Cart</button>
       </div>
     </div>
   </div>
@@ -122,6 +123,19 @@ const product = computed(() => {
 
 .product-details h3 {
   font-size: clamp(1.1rem, 3vw + 0.5rem, 1.8rem);
+}
+
+.product-details button {
+  background-color: var(--brand-color);
+  cursor: pointer;
+  padding: 1rem 1.8rem;
+  color: var(--bg-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 100%;
+  margin: 2rem 0;
+  border: none;
+  border-radius: 2rem;
 }
 
 .product-discription {
