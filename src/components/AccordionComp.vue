@@ -1,16 +1,23 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, defineProps } from 'vue'
 
 const isOpen = ref(false)
 
 const toggleIsOpen = () => {
   isOpen.value = !isOpen.value
 }
+
+defineProps({
+  title: {
+    type: String,
+    default: 'jake'
+  }
+})
 </script>
 <template>
   <div class="accordion">
     <div class="accordion-header">
-      <div class="accordion-title">Title</div>
+      <div class="accordion-title">{{title}}</div>
       <button @click="toggleIsOpen">
         <i :class="isOpen ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
       </button>
@@ -40,6 +47,11 @@ const toggleIsOpen = () => {
 .accordion-header button {
   background: none;
   border: none;
+}
+
+.accordion-title {
+  margin-left: 10%;
+  font-size: 1.3rem ;
 }
 
 .accordion-content {

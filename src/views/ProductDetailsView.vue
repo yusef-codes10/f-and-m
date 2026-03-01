@@ -78,7 +78,9 @@ const product = computed(() => {
         <p class="product-discription">{{ product.description }}</p>
         <h3>${{ product.price }}.00</h3>
         <button>Add to Cart</button>
-        <AccordionComp />
+        <AccordionComp :title="'Heel Height'" />
+        <AccordionComp  :title="'Colors'"/>
+        <AccordionComp :title="'Shoe size'"/>
       </div>
       <!-- TODO: have to build accorsion component for more details -->
     </div>
@@ -118,7 +120,7 @@ const product = computed(() => {
 }
 
 .product-details {
-  background-color: green;
+  /* background-color: green; */
   width: 40%;
   padding: 2rem;
   margin: 2rem 0;
