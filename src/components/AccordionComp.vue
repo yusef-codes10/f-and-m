@@ -14,8 +14,7 @@ const toggleIsOpen = () => {
                 Title
             </div>
             <button @click="toggleIsOpen">
-                <i class="fa-solid fa-chevron-up"></i>
-                <i class="fa-solid fa-chevron-up"></i>
+                <i :class="{isOpen, 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'}"></i>
 
             </button>
         </div>
