@@ -10,7 +10,9 @@ const toggleIsOpen = () => {
 <template>
     <div class="accordion">
         <div class="accordion-header">
-            <div class="accordion-title"></div>
+            <div class="accordion-title">
+                Title
+            </div>
             <button @click="toggleIsOpen">
                 <i class="fa-solid fa-chevron-up"></i>
                 <i class="fa-solid fa-chevron-up"></i>
@@ -28,5 +30,17 @@ const toggleIsOpen = () => {
     height: 50px;
     width: 300px;
     background-color: aqua;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.accordion-header button {
+    background: none;
+    border: none;
 }
 </style>
