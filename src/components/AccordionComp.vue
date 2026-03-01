@@ -17,11 +17,6 @@ const toggleIsOpen = () => {
     </div>
     <transition name="accordion-content">
       <div class="accordion-content" v-if="isOpen">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque animi quas voluptates
-        sapiente atque nulla quisquam sint praesentium. Laborum minus libero maiores quisquam quasi.
-        Asperiores quam quod consequuntur modi et reiciendis ad autem, deserunt, cum illum tempore
-        maxime iste eius aliquam reprehenderit nesciunt sapiente necessitatibus debitis cupiditate
-        ducimus optio laudantium.
       </div>
     </transition>
     <hr />
