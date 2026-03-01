@@ -78,6 +78,7 @@ const product = computed(() => {
         <h3>${{ product.price }}.00</h3>
         <button>Add to Cart</button>
       </div>
+      <!-- TODO: have to build accorsion component for more details -->
     </div>
   </div>
 </template>
