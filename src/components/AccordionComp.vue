@@ -27,7 +27,7 @@ const toggleIsOpen = () => {
   width: 100%;
   /* max-width: 400px; */
   height: auto;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .accordion-header {
@@ -64,7 +64,7 @@ i {
 }
 
 hr {
-  border-top: 1px solid #000; /* Solid black line, 2px thick */
+  border: 1px solid #000; /* Solid black line, 2px thick */
   width: 80%;
   text-align: center;
   margin: 0.5rem auto auto auto;
