@@ -81,8 +81,9 @@ const product = computed(() => {
         <AccordionComp :title="'Heel Height'" />
         <AccordionComp  :title="'Colors'"/>
         <AccordionComp :title="'Shoe size'"/>
+        <!-- TODO: we need to handle this one better, more dynamic and stock and everything else option -->
       </div>
-      <!-- TODO: have to build accorsion component for more details -->
+
     </div>
   </div>
 </template>
