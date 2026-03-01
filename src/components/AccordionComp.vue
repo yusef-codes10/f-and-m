@@ -25,7 +25,7 @@ const toggleIsOpen = () => {
 <style scoped>
 .accordion {
   width: 100%;
-  max-width: 400px; /* optional */
+  /* max-width: 400px; */
   height: auto;
   background-color: aqua;
 }
