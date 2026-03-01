@@ -1,4 +1,5 @@
 <script setup>
+import AccordionComp from '@/components/AccordionComp.vue';
 import FProduct from '@/components/FProduct.vue'
 
 import { productsStore } from '@/stores/productStore'
@@ -15,6 +16,7 @@ console.log(` fav ${myStore.favoriteProducts}`)
     <div class="products">
       <FProduct v-for="product in myStore.favoriteProducts" :key="product.id" :product="product" />
     </div>
+    <AccordionComp />
   </div>
 </template>
 
