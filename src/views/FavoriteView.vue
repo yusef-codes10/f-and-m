@@ -17,6 +17,10 @@ console.log(` fav ${myStore.favoriteProducts}`)
       <FProduct v-for="product in myStore.favoriteProducts" :key="product.id" :product="product" />
     </div>
     <AccordionComp />
+    <AccordionComp />
+    <AccordionComp />
+    <AccordionComp />
+
   </div>
 </template>
 
