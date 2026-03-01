@@ -74,8 +74,8 @@ const product = computed(() => {
       <div class="product-details">
         <p>{{ product.status }}</p>
         <h2 class="title">{{ product.title }}</h2>
-        <h3>${{ product.price }}</h3>
-        <div class="available-colors">Colors:</div>
+        <p class="product-discription">{{ product.description }}</p>
+        <h3>${{ product.price }}.00</h3>
       </div>
     </div>
   </div>
@@ -118,6 +118,14 @@ const product = computed(() => {
   width: 40%;
   padding: 2rem;
   margin: 2rem 0;
+}
+
+.product-details h3 {
+  font-size: clamp(1.1rem, 3vw + 0.5rem, 1.8rem);
+}
+
+.product-discription {
+  margin: 0.25rem 0;
 }
 
 .img-gallery {
