@@ -36,7 +36,7 @@ console.log(myStore.allProducts.map((e) => e.title))
 <style scoped>
 .search {
   min-height: 100vh;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 </style>
 

@@ -21,7 +21,7 @@ console.log(` fav ${myStore.favoriteProducts}`)
 <style scoped>
 .favorite {
   min-height: 100dvh;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 </style>
 
