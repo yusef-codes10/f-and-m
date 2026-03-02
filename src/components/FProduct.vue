@@ -207,3 +207,5 @@ h3 a {
   color: var(--text-color);
 }
 </style>
+
+<!-- TODO: computed syncing for price times quantiy -->
