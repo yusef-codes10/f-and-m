@@ -111,7 +111,7 @@ watch(quantity, (newVal) => {
           />
           <p v-if="showError" class="errorPopup">Only {{ product.stock }} available!!!</p>
         </AccordionComp>
-        <AccordionComp :title="'Colors'" v-if="m.availableColors.length > 1">
+        <AccordionComp :title="'Colors'" v-if="product?.availableColor?.length > 1">
           <!-- we going to use an array of images here -->
           <div class="img-gallery-colors">
             <img
