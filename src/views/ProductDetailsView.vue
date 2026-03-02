@@ -53,7 +53,7 @@ const product = computed(() => {
 // * handle the quantity vs stock
 const quantity = ref(1)
 const computedQuantity = computed(() => {
-  if (quantity.value < product.value.stock) console.log('out of stock');
+  if (quantity.value > product.value.stock) console.log('out of stock');
   return 1}
 )
 </script>
@@ -87,7 +87,7 @@ const computedQuantity = computed(() => {
         <button>Add to Cart</button>
         <AccordionComp :title="'Quantity'" >
           <!-- TODO: we better use computed property to not get out of stock -->
-          <input type="number" min="1" :value="computedQuantity" />
+          <input type="number" min="1" :v-model="computedQuantity" />
         </AccordionComp>
         <AccordionComp  :title="'Colors'"/>
         <AccordionComp :title="'Shoe size'"/>
