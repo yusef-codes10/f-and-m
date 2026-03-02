@@ -78,7 +78,9 @@ const product = computed(() => {
         <p class="product-discription">{{ product.description }}</p>
         <h3>${{ product.price }}.00</h3>
         <button>Add to Cart</button>
-        <AccordionComp :title="'Quantity'" />
+        <AccordionComp :title="'Quantity'" >
+          <input type="number" min="1" value="1" />
+        </AccordionComp>
         <AccordionComp  :title="'Colors'"/>
         <AccordionComp :title="'Shoe size'"/>
         <!-- TODO: we need to handle this one better, more dynamic and stock and everything else option -->
