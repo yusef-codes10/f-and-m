@@ -9,7 +9,7 @@
 // console.log(route.params.slug)
 
 // now lets's pass it as an arg
-import { defineProps, ref, computed } from 'vue'
+import { defineProps, ref, computed, watch } from 'vue'
 const { slug } = defineProps({
   slug: {
     type: String,
@@ -49,6 +49,18 @@ const product = computed(() => {
 // const toggleActiveState = () => {
 //   isActive.value = !isActive.value
 // }
+
+// * handle the quantity vs stock
+const quantity = ref(1)
+// const computedQuantity = computed(() => {
+//   if (quantity.value > product.value.stock) console.log('out of stock');
+//   return 1}
+// )
+watch(quantity, newVal => {
+  if (newVal > product.value.stock) {
+    console.log('out of stock');
+  }
+})
 </script>
 <template>
   <div class="details">
@@ -78,11 +90,14 @@ const product = computed(() => {
         <p class="product-discription">{{ product.description }}</p>
         <h3>${{ product.price }}.00</h3>
         <button>Add to Cart</button>
-        <AccordionComp :title="'Heel Height'" />
+        <AccordionComp :title="'Quantity'" >
+          <!-- TODO: we better use computed property to not get out of stock -->
+          <input type="number" min="1" v-model="quantity" />
+        </AccordionComp>
         <AccordionComp  :title="'Colors'"/>
         <AccordionComp :title="'Shoe size'"/>
       </div>
-      <!-- TODO: have to build accorsion component for more details -->
+
     </div>
   </div>
 </template>
@@ -180,11 +195,13 @@ p {
   opacity: 1 !important;
   transition: 0.3s;
 }
+
+input {
+  margin-left: 10%;
+  padding: 0.5rem 1rem;
+  outline: var(--brand-color);
+  width: 80%; /* same width as hr */
+  font-size: 1.3rem;
+
+}
 </style>
-
-<!-- TODO optimization: use computed property instead of the called function -->
-<!-- TODO: clickable image gallery for preview -->
-<!-- TODO: more details for the product-->
-
-
-<!-- TODO: right now this view handles only the women shoes I have to make it handle the other products -->
