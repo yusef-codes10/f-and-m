@@ -17,6 +17,8 @@ const bags = [
     isFavorite: false,
     slug: 'eva',
     category: 'bag',
+    // this is how many physical product are avilable
+    stock: 5,
   },
   {
     id: 2,
@@ -35,6 +37,8 @@ const bags = [
     isFavorite: false,
     slug: 'bettina',
     category: 'bag',
+    // this is how many physical product are avilable
+    stock: 5,
   },
   {
     id: 3,
@@ -53,6 +57,8 @@ const bags = [
     isFavorite: false,
     slug: 'baggy',
     category: 'bag',
+    // this is how many physical product are avilable
+    stock: 5,
   },
 ]
 
