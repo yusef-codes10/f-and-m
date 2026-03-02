@@ -70,7 +70,7 @@ const womenShoes = [
     slug: 'hot-chick-100',
     category: 'women-shoes',
     // this is how many physical product are avilable
-    stock: 5,
+    stock: 51,
     coloredPreview: [
       { id: 1, url: '/images/hot-chick-bianco.jpg' },
       { id: 2, url: '/images/hot-chick-black.jpg' },
@@ -149,9 +149,8 @@ const womenShoes = [
     // this is how many physical product are avilable
     stock: 5,
     coloredPreview: [
-      { id: 1, url: '/images/hot-chick-bianco.jpg' },
-      { id: 2, url: '/images/hot-chick-black.jpg' },
-      { id: 3, url: '/images/hot-chick-blush.jpg' },
+      { id: 1, url: '/images/loubi-queen.jpg' },
+      { id: 2, url: '/images/loubi-queen-white.jpg' },
     ],
   },
 

@@ -122,7 +122,7 @@ watch(quantity, (newVal) => {
             />
           </div>
         </AccordionComp>
-        <AccordionComp :title="'Shoe size'" />
+        <AccordionComp :title="'Shoe size'" v-if="product.category==='women-shoes'" />
       </div>
     </div>
   </div>
