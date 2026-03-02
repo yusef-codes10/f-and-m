@@ -19,6 +19,11 @@ const womenShoes = [
     category: 'women-shoes',
     // this is how many physical product are avilable
     stock: 5,
+    coloredPreview: [
+      { id: 1, url: '/images/hot-chick-bianco.jpg' },
+      { id: 2, url: '/images/hot-chick-black.jpg' },
+      { id: 3, url: '/images/hot-chick-blush.jpg' },
+    ],
   },
   {
     id: 2,
@@ -40,6 +45,11 @@ const womenShoes = [
     category: 'women-shoes',
     // this is how many physical product are avilable
     stock: 5,
+    coloredPreview: [
+      { id: 1, url: '/images/hot-chick-bianco.jpg' },
+      { id: 2, url: '/images/hot-chick-black.jpg' },
+      { id: 3, url: '/images/hot-chick-blush.jpg' },
+    ],
   },
   {
     id: 3,
@@ -62,9 +72,9 @@ const womenShoes = [
     // this is how many physical product are avilable
     stock: 5,
     coloredPreview: [
-      {id: 1, url: '/images/hot-chick-bianco.jpg'},
-      {id: 2, url: '/images/hot-chick-black.jpg'},
-      {id: 3, url: '/images/hot-chick-blush.jpg'},
+      { id: 1, url: '/images/hot-chick-bianco.jpg' },
+      { id: 2, url: '/images/hot-chick-black.jpg' },
+      { id: 3, url: '/images/hot-chick-blush.jpg' },
     ],
   },
   {
@@ -87,6 +97,11 @@ const womenShoes = [
     category: 'women-shoes',
     // this is how many physical product are avilable
     stock: 5,
+    coloredPreview: [
+      { id: 1, url: '/images/hot-chick-bianco.jpg' },
+      { id: 2, url: '/images/hot-chick-black.jpg' },
+      { id: 3, url: '/images/hot-chick-blush.jpg' },
+    ],
   },
   {
     id: 5,
@@ -107,6 +122,11 @@ const womenShoes = [
     category: 'women-shoes',
     // this is how many physical product are avilable
     stock: 5,
+    coloredPreview: [
+      { id: 1, url: '/images/hot-chick-bianco.jpg' },
+      { id: 2, url: '/images/hot-chick-black.jpg' },
+      { id: 3, url: '/images/hot-chick-blush.jpg' },
+    ],
   },
   {
     id: 6,
@@ -128,6 +148,11 @@ const womenShoes = [
     category: 'women-shoes',
     // this is how many physical product are avilable
     stock: 5,
+    coloredPreview: [
+      { id: 1, url: '/images/hot-chick-bianco.jpg' },
+      { id: 2, url: '/images/hot-chick-black.jpg' },
+      { id: 3, url: '/images/hot-chick-blush.jpg' },
+    ],
   },
 
   {
@@ -150,6 +175,11 @@ const womenShoes = [
     category: 'women-shoes',
     // this is how many physical product are avilable
     stock: 5,
+    coloredPreview: [
+      { id: 1, url: '/images/hot-chick-bianco.jpg' },
+      { id: 2, url: '/images/hot-chick-black.jpg' },
+      { id: 3, url: '/images/hot-chick-blush.jpg' },
+    ],
   },
 ]
 
