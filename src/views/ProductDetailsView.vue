@@ -49,6 +49,12 @@ const product = computed(() => {
 // const toggleActiveState = () => {
 //   isActive.value = !isActive.value
 // }
+
+// * handle the quantity vs stock
+const quantity = computed(() => {
+  if (quantity.value < product.value.stock) console.log('out of stock');
+  return 1}
+)
 </script>
 <template>
   <div class="details">
@@ -80,7 +86,7 @@ const product = computed(() => {
         <button>Add to Cart</button>
         <AccordionComp :title="'Quantity'" >
           <!-- TODO: we better use computed property to not get out of stock -->
-          <input type="number" min="1" value="1" />
+          <input type="number" min="1" :value="quantity" />
         </AccordionComp>
         <AccordionComp  :title="'Colors'"/>
         <AccordionComp :title="'Shoe size'"/>
