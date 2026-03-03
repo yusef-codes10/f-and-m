@@ -14,6 +14,9 @@ defineProps({
   },
 })
 
+// ! tracking the selected color
+const selectedColor = ref(props.product.defaultColor)
+
 // hoverin on the preview img
 const currentImageIndex = ref(0)
 
@@ -51,7 +54,7 @@ const addToFavorite = (product) => {
 <template>
   <div class="product">
     <div class="preview" @mouseenter="showArrowButton" @mouseleave="showArrowButton">
-      <img :src="product.preview[currentImageIndex].url" alt="" />
+      <img :src="product.colors.images[currentImageIndex]" alt="" />
       <!-- <img :src="product.image" :alt="product.title" /> -->
 
       <!-- arrow buttons here that will only show when hovering -->
@@ -85,7 +88,7 @@ const addToFavorite = (product) => {
       <div class="available-colors">
         <div
           class="color"
-          v-for="color in product.availableColor"
+          v-for="color in product.colors.map(color => color.name)"
           :key="color"
           :class="color"
         ></div>
