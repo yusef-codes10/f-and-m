@@ -76,7 +76,7 @@ const selectedColor = ref(product.value.defaultColor)
 
 // computed property for the current color, later we will change the color only
 const currentColor = computed(() =>
-  product.value.colors.find(c => c.name === selectedColor.value)
+  product.value.colors.find((c) => c.name === selectedColor.value)
 )
 </script>
 <template>
@@ -118,7 +118,10 @@ const currentColor = computed(() =>
           />
           <p v-if="showError" class="errorPopup">Only {{ product.stock }} available!!!</p>
         </AccordionComp>
-        <AccordionComp :title="'Colors'" v-if="product?.colors.map(color => color.name).length > 1">
+        <AccordionComp
+          :title="'Colors'"
+          v-if="product?.colors.map((color) => color.name).length > 1"
+        >
           <!-- we going to use an array of images here -->
           <div class="img-gallery-colors">
             <img
@@ -126,10 +129,11 @@ const currentColor = computed(() =>
               :key="index"
               :src="color.images[0]"
               alt="color.name"
+              @click="console.log(`you have clicked on ${color.images[0]}`)"
             />
           </div>
         </AccordionComp>
-        <AccordionComp :title="'Shoe size'" v-if="product.category==='women-shoes'" />
+        <AccordionComp :title="'Shoe size'" v-if="product.category === 'women-shoes'" />
       </div>
     </div>
   </div>
@@ -258,7 +262,7 @@ input {
   margin-left: 10%;
 }
 
-.img-gallery-colors  img {
+.img-gallery-colors img {
   width: 100px;
   height: 100px;
   object-fit: contain;
@@ -267,3 +271,4 @@ input {
 </style>
 
 <!-- TODO fixing the data and its functionalities has been done, now we can complete -->
+ <!-- ! we need to just switch the currentColor this selectedColor -->
