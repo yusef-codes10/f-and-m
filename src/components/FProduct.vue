@@ -8,14 +8,12 @@ import { defineProps, ref } from 'vue'
 
 const isHoverd = ref(false)
 
-defineProps({
+const props = defineProps({
   product: {
     type: Object,
   },
 })
 
-// ! tracking the selected color
-const selectedColor = ref(props.product.defaultColor)
 
 // hoverin on the preview img
 const currentImageIndex = ref(0)
@@ -49,6 +47,15 @@ const addToFavorite = (product) => {
   product.isFavorite = !product.isFavorite
   console.log(product.isFavorite)
 }
+
+
+// ! tracking the selected color
+const selectedColor = ref(props.product.defaultColor)
+
+// computed property for the current color, later we will change the color only
+const currentColor = computed(() => 
+  props.product.colors.find(c => c.name === selectedColor.value)
+)
 </script>
 
 <template>
