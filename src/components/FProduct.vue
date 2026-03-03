@@ -54,7 +54,7 @@ const addToFavorite = (product) => {
 const selectedColor = ref(props.product.defaultColor)
 
 // computed property for the current color, later we will change the color only
-const currentColor = computed(() => 
+const currentColor = computed(() =>
   props.product.colors.find(c => c.name === selectedColor.value)
 )
 </script>
