@@ -73,6 +73,7 @@ watch(quantity, (newVal) => {
 // we need current color
 // ! tracking the selected color
 const selectedColor = ref(product.value.defaultColor)
+console.log(`This is the selected color ${selectedColor.value}`);
 
 // computed property for the current color, later we will change the color only
 const currentColor = computed(() =>
@@ -131,7 +132,7 @@ const changeImagePreview = (thing) => console.log(thing);
               :key="index"
               :src="color.images[0]"
               alt="color.name"
-              @click="changeImagePreview(color.images[0])"
+              @click="changeImagePreview(product.colors.name)"
             />
           </div>
         </AccordionComp>
