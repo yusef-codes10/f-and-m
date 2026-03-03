@@ -33,11 +33,11 @@ const nextImage = () => {
   }
 }
 
-const previousImage = (product) => {
+const previousImage = () => {
   if (currentImageIndex.value > 0) {
     currentImageIndex.value--
   } else {
-    currentImageIndex.value = product.preview.length - 1
+    currentImageIndex.value = currentColor.value.images.length
   }
 }
 
@@ -65,7 +65,7 @@ const currentColor = computed(() =>
       <!-- <img :src="product.image" :alt="product.title" /> -->
 
       <!-- arrow buttons here that will only show when hovering -->
-      <button class="leftBtn" v-show="isShowingArrows" @click="previousImage(product)">
+      <button class="leftBtn" v-show="isShowingArrows" @click="previousImage">
         <i class="fa-solid fa-chevron-left"></i>
       </button>
 
