@@ -70,7 +70,9 @@ watch(quantity, (newVal) => {
   }
 })
 
-// conditional rendering for having colors or not
+// we need current color
+// ! tracking the selected color
+const selectedColor = ref(product.value.defaultColor)
 </script>
 <template>
   <div class="details">
