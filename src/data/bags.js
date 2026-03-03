@@ -21,14 +21,6 @@ const bags = [
           '/images/eva-top.jpg',
         ],
       },
-      {
-        name: 'blush',
-        images: [
-          '/images/hot-chick-bianco.jpg',
-          '/images/hot-chick-black.jpg',
-          '/images/hot-chick-blush.jpg',
-        ],
-      },
     ],
   },
 
@@ -54,14 +46,6 @@ const bags = [
           '/images/bettina-mini-top.jpg',
         ],
       },
-      {
-        name: 'red',
-        images: [
-          '/images/hot-chick-bianco.jpg',
-          '/images/hot-chick-black.jpg',
-          '/images/hot-chick-blush.jpg',
-        ],
-      },
     ],
   },
 
@@ -85,14 +69,6 @@ const bags = [
           '/images/baggy.jpg',
           '/images/baggy-full.jpg',
           '/images/baggy-top.jpg',
-        ],
-      },
-      {
-        name: 'white',
-        images: [
-          '/images/hot-chick-bianco.jpg',
-          '/images/hot-chick-black.jpg',
-          '/images/hot-chick-blush.jpg',
         ],
       },
     ],

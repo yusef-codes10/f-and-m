@@ -130,20 +130,12 @@ const womenShoes = [
 
     colors: [
       {
-        name: 'black',
+        name: 'blush',
         images: [
           '/images/sporty-so-kate.jpg',
           '/images/sporty-so-kate-profile.jpg',
           '/images/sporty-so-kate-back.jpg',
           '/images/sporty-so-kate-toebox.jpg',
-        ],
-      },
-      {
-        name: 'blush',
-        images: [
-          '/images/hot-chick-bianco.jpg',
-          '/images/hot-chick-black.jpg',
-          '/images/hot-chick-blush.jpg',
         ],
       },
     ],
@@ -243,14 +235,14 @@ const womenShoes = [
     ],
   },
     {
-    id: 7,
+    id: 8,
     title: 'Iriza',
     description: '100 mm Pumps - Patent Calf leather',
     defaultColor: 'black',
     for: 'Women',
     status: 'BestSeller',
     price: 995,
-    isFavorite: false,
+    isFavorite: true,
     slug: 'iriza-100',
     category: 'women-shoes',
     stock: 5,
