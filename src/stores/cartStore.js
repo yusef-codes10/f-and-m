@@ -10,7 +10,7 @@ export const cartStore = defineStore('cart', () => {
 
     // * actions
     const addToCart = (product) => {
-        cartItems.value.push(product)
+        cartItems.value.push({product, quantity: 1})
         console.log(`this is your cart ${cartItems.value[0].title}`);
     }
 
