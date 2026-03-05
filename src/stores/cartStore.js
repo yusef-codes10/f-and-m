@@ -10,16 +10,16 @@ export const cartStore = defineStore('cart', () => {
 
     // * actions
     const addToCart = (product, q) => {
-        cartItems.value.push({product, quantity: q})
-        console.log(`this is your cart ${cartItems.value[0].product.title} and the qty is ${cartItems.value[0].quantity}`);
         if (!checkProduct(product.id)) {
             console.log('does not exit');
         }
+        cartItems.value.push({product, quantity: q})
+        console.log(`this is your cart ${cartItems.value[0].product.title} and the qty is ${cartItems.value[0].quantity}`);
     }
 
     const checkProduct = (id) => {
-        console.log(`this is it ${cartItems.value.find(pro => pro.id === id)}`);
-        return cartItems.value.find(pro => pro.id === id)
+        console.log(`this is it ${cartItems.value.find(obj => obj.id === id)}`);
+        return cartItems.value.find(obj => obj.product.id === id)
     }
 
 
