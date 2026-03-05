@@ -5,6 +5,12 @@ import { productsStore } from '@/stores/productStore'
 const myStore = productsStore()
 console.log(myStore.shoes)
 
+// import the cart store
+import { cartStore } from "@/stores/cartStore";
+
+const myCartStore = cartStore()
+console.log(myCartStore);
+
 // the ruter for the search
 import { useRouter } from 'vue-router'
 
@@ -64,7 +70,7 @@ const submitSearch = () => {
         <button class="cart-btn">
           <i class="fa-brands fa-opencart"></i>
         </button>
-        <div class="cart-items-number">10</div>
+        <div class="cart-items-number">{{myCartStore.cartItems.length}}</div>
       </div>
       <button class="hidden">Sign Up</button>
     </div>
