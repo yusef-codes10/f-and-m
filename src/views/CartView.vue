@@ -17,7 +17,7 @@ import FProduct from '@/components/FProduct.vue'
 </template>
 <style scoped>
 .cart-page {
-  height: 100dvh;
+  min-height: 100dvh;
   background-color: sienna;
 }
 </style>
