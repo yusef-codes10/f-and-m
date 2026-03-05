@@ -14,6 +14,7 @@ export const cartStore = defineStore('cart', () => {
             const item = cartItems.value.find(obj => obj.product.id === product.id)
             if (item) {
                 // increase qty
+                // here we gonna make the item.quantity does not go past the product stock, we have all the data
                 item.quantity += q
                 console.log(`this is the item qty ${item.quantity }`);
             } else {
