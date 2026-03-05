@@ -15,7 +15,7 @@ export const cartStore = defineStore('cart', () => {
             if (item) {
                 // increase qty
                 // here we gonna make the item.quantity does not go past the product stock, we have all the data
-                if (item.quantity >= product.stock) {
+                if (item.quantity + q > product.stock) {
                     console.log(`out of stock, no can do`);
                 }
                 else {
