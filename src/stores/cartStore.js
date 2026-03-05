@@ -12,6 +12,11 @@ export const cartStore = defineStore('cart', () => {
     const addToCart = (product, q) => {
         if (!checkProduct(product.id)) {
             console.log('does not exit');
+            // we have to find the product that matches our id again
+            const item = cartItems.value.find(obj => obj.product.id === product.id)
+            if (item) {
+                // increase qty
+            }
         }
         cartItems.value.push({product, quantity: q})
         console.log(`this is your cart ${cartItems.value[0].product.title} and the qty is ${cartItems.value[0].quantity}`);
