@@ -22,4 +22,5 @@ import FProduct from '@/components/FProduct.vue'
 }
 </style>
 
-<!-- TODO:  -->
+<!-- TODO:  Since it serves different functionality than women/bags/favs. it should have it's own unique layout-->
+<!-- TODO: delete from cart and that's it -->
