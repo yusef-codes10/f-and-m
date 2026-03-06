@@ -52,6 +52,7 @@ export const cartStore = defineStore('cart', () => {
 //     }, 0)
 //   })
 
+    // TODO: return the item count as well
   const cartTotolPrice = computed(() => {
   let total = 0
 
