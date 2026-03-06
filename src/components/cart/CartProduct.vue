@@ -3,14 +3,22 @@ import { cartStore } from '@/stores/cartStore'
 
 const myCartStore = cartStore()
 
-import { ref } from 'vue'
+import { ref, defineProps, computed } from 'vue'
 
-const selectedColor = ref(product.defaultColor)
+const props = defineProps({
+  product: {
+    type: Object,
+  },
+})
+
+const selectedColor = ref(props.product.defaultColor)
 
 // computed property for the current color, later we will change the color only
 const currentColor = computed(() =>
-  product.colors.find((c) => c.name === selectedColor.value)
+  props.product.colors.find((c) => c.name === selectedColor.value)
 )
+
+console.log(currentColor);
 </script>
 <template>
   <div class="item" v-for="item in myCartStore.cartItems" :key="item.product.id">
