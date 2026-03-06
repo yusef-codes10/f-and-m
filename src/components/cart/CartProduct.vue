@@ -1,12 +1,8 @@
 <script setup>
-import { cartStore } from '@/stores/cartStore'
-
-const myCartStore = cartStore()
-
 import { ref, defineProps, computed } from 'vue'
 
 const props = defineProps({
-  product: {
+  item: {
     type: Object,
   },
 })
@@ -21,9 +17,9 @@ const currentColor = computed(() =>
 console.log(currentColor);
 </script>
 <template>
-  <div class="item" v-for="item in myCartStore.cartItems" :key="item.product.id">
-    <h1>{{ item.product.title }}</h1>
-    <p>{{ item.quantity }}</p>
+  <div class="item" >
+    <h1>{{ props.product.title }}</h1>
+    <p>{{ props.quantity }}</p>
   </div>
 </template>
 <style scoped>

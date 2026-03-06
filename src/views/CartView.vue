@@ -13,7 +13,7 @@ import CartProduct from '@/components/cart/CartProduct.vue';
     <h3>The products in cart</h3>
     <div class="cart-flex">
       <!-- <FProduct v-for="item in myCartStore.cartItems" :key="item.product.id" :product="item.product" /> -->
-       <CartProduct />
+       <CartProduct v-for="item in myCartStore.cartItems" :key="item.product.id" :item="item"/>
     </div>
   </div>
 </template>
