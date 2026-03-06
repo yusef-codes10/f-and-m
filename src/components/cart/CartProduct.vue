@@ -20,14 +20,17 @@ console.log(currentColor);
   <div class="item" >
     <h1>{{ props.item.product.title }}</h1>
     <p>{{ props.item.quantity }}</p>
+    <div class="image">
+        <img :src="currentColor?.images[0]" :alt="props.item.product.title">
+    </div>
   </div>
 </template>
 <style scoped>
 .item {
   background-color: red;
-  padding: 5rem;
+  /* padding: 5rem; */
   height: 100px;
-  width: 100px;
+  width: 80%;
   margin: 1rem 0;
 }
 </style>
