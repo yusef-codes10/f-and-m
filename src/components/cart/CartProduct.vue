@@ -1,5 +1,8 @@
 <script setup>
 import { ref, defineProps, computed } from 'vue'
+import { cartStore } from '@/stores/cartStore'
+
+const myCartStore = cartStore()
 
 const props = defineProps({
   item: {
@@ -38,8 +41,8 @@ const inStock = computed(() => {
 
       <p>{{ props.item.quantity }}</p>
       <div class="remove-btn">
-        <button>
-            <i class="fa-solid fa-trash-can"></i>
+        <button @click="myCartStore.deleteItem(props.item.product.id)">
+          <i class="fa-solid fa-trash-can"></i>
         </button>
       </div>
     </div>
@@ -79,12 +82,12 @@ const inStock = computed(() => {
   margin-left: auto;
 }
 
-.remove-btn button{
-    background: none;
-    border-radius: 3rem;
-    border-color: var(--brand-color);
-    padding: 4px 8px;
-    font-size: 0.9rem;
-    cursor: pointer;
+.remove-btn button {
+  background: none;
+  border-radius: 3rem;
+  border-color: var(--brand-color);
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 </style>

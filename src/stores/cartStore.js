@@ -36,7 +36,7 @@ export const cartStore = defineStore('cart', () => {
         return cartItems.value.find(obj => obj.product.id === id)
     }
 
-    const deleteItem = () => {
+    const deleteItem = (id) => {
         // find the item
 
 
@@ -49,7 +49,7 @@ export const cartStore = defineStore('cart', () => {
 
 
         addToCart,
-        checkProduct,
+        deleteItem,
     }
 })
 
