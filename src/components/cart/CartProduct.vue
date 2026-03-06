@@ -7,19 +7,19 @@ const props = defineProps({
   },
 })
 
-const selectedColor = ref(props.product.defaultColor)
+const selectedColor = ref(props.item.product.defaultColor)
 
 // computed property for the current color, later we will change the color only
 const currentColor = computed(() =>
-  props.product.colors.find((c) => c.name === selectedColor.value)
+  props.item.product.colors.find((c) => c.name === selectedColor.value)
 )
 
 console.log(currentColor);
 </script>
 <template>
   <div class="item" >
-    <h1>{{ props.product.title }}</h1>
-    <p>{{ props.quantity }}</p>
+    <h1>{{ props.item.product.title }}</h1>
+    <p>{{ props.item.quantity }}</p>
   </div>
 </template>
 <style scoped>
