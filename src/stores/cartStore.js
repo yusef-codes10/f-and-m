@@ -55,12 +55,14 @@ export const cartStore = defineStore('cart', () => {
     // TODO: return the item count as well
   const cartTotolPrice = computed(() => {
   let total = 0
+  let count = 0
 
   for (const item of cartItems.value) {
     total += item.product.price * item.quantity
+    count++
   }
 
-  return total
+  return ({total, count})
 })
 
   return {
