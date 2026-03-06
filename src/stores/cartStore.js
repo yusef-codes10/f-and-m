@@ -20,6 +20,7 @@ export const cartStore = defineStore('cart', () => {
                 }
                 else {
                     item.quantity += q
+                    product.stock--
 
                 }
                 console.log(`this is the item qty ${item.quantity }`);

@@ -33,6 +33,7 @@ const inStock = computed(() => {
     <div class="content">
       <h1 class="title">{{ props.item.product.title }}</h1>
       <p class="inStock">{{ inStock }}</p>
+      <p>{{ props.item.product.stock }}</p>
       
       <p>{{ props.item.quantity }}</p>
     </div>
