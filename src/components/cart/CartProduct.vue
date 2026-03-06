@@ -18,6 +18,7 @@ console.log(currentColor)
 
 // computed property for inStock
 const inStock = computed(() => {
+    // FIXME: Backend related issue
     if (props.item.product.stock !==0) {
         return 'In Stock'
     } else {
