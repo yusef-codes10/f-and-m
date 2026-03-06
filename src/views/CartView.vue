@@ -23,7 +23,7 @@ import CartProduct from '@/components/cart/CartProduct.vue';
 <style scoped>
 .cart-page {
   min-height: 100dvh;
-  background-color: sienna;
+  /* background-color: sienna; */
 }
 
 .cart-flex {

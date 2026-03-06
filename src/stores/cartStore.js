@@ -46,11 +46,21 @@ export const cartStore = defineStore('cart', () => {
   }
 
   // * getters
+//   const cartTotolPrice = computed(() => {
+//     return cartItems.value.reduce((total, item) => {
+//       return total + item.product.price * item.quantity
+//     }, 0)
+//   })
+
   const cartTotolPrice = computed(() => {
-    return cartItems.value.reduce((total, item) => {
-      return total + item.product.price * item.quantity
-    }, 0)
-  })
+  let total = 0
+
+  for (const item of cartItems.value) {
+    total += item.product.price * item.quantity
+  }
+
+  return total
+})
 
   return {
     cartItems,

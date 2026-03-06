@@ -51,7 +51,7 @@ const inStock = computed(() => {
 </template>
 <style scoped>
 .item {
-  background-color: red;
+  /* background-color: red; */
   /* padding: 5rem; */
   height: 100%;
   max-height: 200px;
