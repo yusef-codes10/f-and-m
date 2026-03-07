@@ -5,7 +5,6 @@ import { ref, computed } from 'vue'
 export const cartStore = defineStore('cart', () => {
   // * state
   const cartItems = ref([])
-  const colorToPass = ref(null)
 
   // * actions
   const addToCart = (product, color, q) => {
@@ -13,7 +12,6 @@ export const cartStore = defineStore('cart', () => {
     const item = cartItems.value.find((obj) => obj.product.id === product.id
       && obj.selectedColor === color
   )
-    colorToPass.value = color
     if (item) {
       // increase qty
       // here we gonna make the item.quantity does not go past the product stock, we have all the data
