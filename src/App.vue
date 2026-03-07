@@ -4,9 +4,9 @@ import FFooter from './components/FFooter.vue'
 import SideBar from './components/ui/SideBar.vue';
 // import HomeView from './views/HomeView.vue'
 
-import {cartStore} from '@/stores/sidebarStore.js'
+import {sideBarStore} from '@/stores/sidebarStore.js'
 
-const myStore = cartStore()
+const myStore = sideBarStore()
 </script>
 
 <template>

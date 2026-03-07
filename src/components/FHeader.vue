@@ -35,6 +35,10 @@ const submitSearch = () => {
   })
   // TODO: all we need to do is to render the result on the search vue
 }
+
+import {sideBarStore} from '@/stores/sidebarStore.js'
+
+const sideStore = sideBarStore()
 </script>
 
 <template>
@@ -72,7 +76,10 @@ const submitSearch = () => {
         <div class="cart-items-number">{{ myCartStore.cartItems.length }}</div>
       </div>
       <div class="ham-icon">
-        <i class="fa-solid fa-bars"></i>
+        <button @click="myStore.tog">
+
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
       <button class="hidden">Sign Up</button>
     </div>

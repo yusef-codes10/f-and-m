@@ -8,9 +8,9 @@ defineProps(
     }
 )
 
-import {cartStore} from '@/stores/sidebarStore.js'
+import {sideBarStore} from '@/stores/sidebarStore.js'
 
-const myStore = cartStore()
+const myStore = sideBarStore()
 </script>
 
 <template>

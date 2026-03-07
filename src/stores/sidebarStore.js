@@ -2,7 +2,7 @@
 import { defineStore } from 'pinia'
 import {ref} from 'vue'
 
-export const cartStore = defineStore('sidebar', () => {
+export const sideBarStore = defineStore('sidebar', () => {
 
     const isOpen = ref(false)
 
