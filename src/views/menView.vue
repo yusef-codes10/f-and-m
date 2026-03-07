@@ -36,6 +36,6 @@ console.log(myStore.menShoes)
 <style scoped>
 .men {
   min-height: 100dvh;
-  background-color: seagreen;
+  /* background-color: seagreen; */
 }
 </style>

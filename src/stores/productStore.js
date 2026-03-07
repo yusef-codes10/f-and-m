@@ -53,6 +53,7 @@ export const productsStore = defineStore('product', () => {
   return {
     shoes,
     bags,
+    mShoes,
 
     // * actions
     toggleFavoriteFilter,

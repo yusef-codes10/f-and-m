@@ -39,7 +39,7 @@ const switchPreview = (index) => {
 
 // best approach is to merge the two array in a computed property
 const product = computed(() => {
-  const allProducts = [...myStore.bags, ...myStore.shoes]
+  const allProducts = [...myStore.bags, ...myStore.shoes, ...myStore.mShoes]
   return allProducts.find((el) => el.slug === slug)
 })
 
