@@ -24,11 +24,12 @@ const myStore = sideBarStore()
   position: fixed;
   right: 0;
   top: 0;
+
   width: 280px;
   height: 100vh;
   background-color: red;
 
-  transform: translateX(-100%);
+  transform: translateX(100%); /* push it to the right */
   transition: transform 0.3s ease;
 }
 
