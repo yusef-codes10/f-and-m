@@ -183,7 +183,7 @@ console.log(myCartStore);
   width: 100%;       /* 👈 FULL WIDTH on mobile */
   height: auto;      /* 👈 remove 100vh */
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   gap: 0.5rem;
 }
 
