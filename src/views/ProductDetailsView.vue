@@ -162,6 +162,7 @@ console.log(myCartStore);
   width: 100%;
   /* background-color: tomato; */
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
@@ -283,13 +284,20 @@ input {
   cursor: pointer;
 }
 
-@media(max-width: 600px) {
+/* @media(max-width: 600px) {
   .product-preview {
     display: flex;
     flex-direction: column;
   }
   input, button {
     width: 100%;
+  }
+} */
+
+@media (min-width: 768px) {
+.product-preview {
+    /* display: flex; */
+    flex-direction: row;
   }
 }
 </style>
