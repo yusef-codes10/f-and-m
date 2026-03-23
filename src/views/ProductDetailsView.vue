@@ -231,12 +231,11 @@ console.log(myCartStore);
 }
 
 .img-gallery img {
-  height: 100%;
-  aspect-ratio: 1 / 1; /* square thumbnails */
+  width: 70px;
+  height: 70px;
   object-fit: cover;
-  flex-shrink: 0; /* prevents shrinking */
 
-  /* make a little grayish overlay */
+    /* make a little grayish overlay */
   opacity: 0.5;
   transition: 0.3s;
   cursor: pointer;
