@@ -178,9 +178,10 @@ console.log(myCartStore);
   object-fit: contain; /* or cover */
 }
 
+
 .images-section {
-  width: 60%; /* because product-details is 30% */
-  height: 100vh;
+  width: 100%;       /* 👈 FULL WIDTH on mobile */
+  height: auto;      /* 👈 remove 100vh */
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
