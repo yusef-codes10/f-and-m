@@ -95,7 +95,7 @@ nav {
 
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 30;
 }
 
 .logo {
@@ -200,6 +200,7 @@ input {
 
 .ham-icon {
   display: block;
+  /* z-index: 50; */
 }
 
 @media(min-width: 768px) {

@@ -32,7 +32,7 @@ const myStore = sideBarStore()
 
   transform: translateX(100%); /* push it to the right */
   transition: transform 0.3s ease;
-  z-index: 999;
+  z-index: 40;
 }
 
 .sidebar.open {
