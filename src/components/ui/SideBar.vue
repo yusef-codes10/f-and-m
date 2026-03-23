@@ -11,12 +11,16 @@ defineProps(
 import {sideBarStore} from '@/stores/sidebarStore.js'
 
 const myStore = sideBarStore()
+
+const close = () => {
+  myStore.isOpen = false
+}
 </script>
 
 <template>
     <div class="sidebar"  :class="{ open: myStore.isOpen }">
         this is the side bar
-        <i class="fa-solid fa-xmark"></i>
+        <i @click="close" class="fa-solid fa-xmark"></i>
     </div>
 </template>
 <style scoped>
@@ -26,7 +30,7 @@ const myStore = sideBarStore()
   right: 0;
   top: 0;
 
-  width: 280px;
+  width: 70%;
   height: 100vh;
   /* background-color: red; */
   background-color: var(--bg-color);
