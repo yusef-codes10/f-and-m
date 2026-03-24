@@ -59,9 +59,9 @@ p {
     }
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     :root {
         --bg-color: #111111;
         --text-color: #F5F5F5;
     }
-}
+} */
