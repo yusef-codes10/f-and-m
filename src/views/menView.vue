@@ -6,7 +6,6 @@ import { productsStore } from '@/stores/productStore'
 
 // we have to set the store
 const myStore = productsStore()
-console.log(myStore.menShoes)
 
 // import { ref, onMounted } from 'vue'
 

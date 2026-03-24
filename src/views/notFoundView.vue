@@ -8,6 +8,6 @@
 <style scoped>
 .not-found {
   height: calc(100vh - 80px);
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
 }
 </style>

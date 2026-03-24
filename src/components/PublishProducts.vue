@@ -1,14 +1,12 @@
 <script setup>
 import FProduct from './FProduct.vue'
-// import shoes from '@/data/women-shoes.js'
 import { productsStore } from '@/stores/productStore'
+import {computed} from 'vue'
+
 
 // we have to set the store
 const myStore = productsStore()
 console.log(myStore.shoes)
-
-// slice to only 5 products
-import {computed} from 'vue'
 
 const slicedProducts = computed(() => {
   const sliced = myStore.shoes.slice(0, 6)

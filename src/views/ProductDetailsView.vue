@@ -9,7 +9,16 @@
 // console.log(route.params.slug)
 
 // now lets's pass it as an arg
-import { defineProps, ref, computed, watch } from 'vue'
+import { ref, computed, watch } from 'vue'
+// importing the pinia store
+import { productsStore } from '@/stores/productStore'
+import AccordionComp from '@/components/AccordionComp.vue'
+// import the cart store
+import { cartStore } from "@/stores/cartStore";
+
+const myCartStore = cartStore()
+
+
 const { slug } = defineProps({
   slug: {
     type: String,
@@ -18,9 +27,6 @@ const { slug } = defineProps({
 })
 console.log(slug)
 
-// importing the pinia store
-import { productsStore } from '@/stores/productStore'
-import AccordionComp from '@/components/AccordionComp.vue'
 
 // we have to set the store
 const myStore = productsStore()
@@ -73,7 +79,6 @@ watch(quantity, (newVal) => {
 // we need current color
 // ! tracking the selected color
 const selectedColor = ref(product.value.defaultColor)
-console.log(`This is the selected color ${selectedColor.value}`);
 
 // computed property for the current color, later we will change the color only
 const currentColor = computed(() =>
@@ -87,11 +92,7 @@ const changeImagePreview = (thing) => {
 
 // call the add to cart function here
 
-// import the cart store
-import { cartStore } from "@/stores/cartStore";
 
-const myCartStore = cartStore()
-console.log(myCartStore);
 </script>
 <template>
   <div class="details">

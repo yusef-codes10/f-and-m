@@ -1,14 +1,12 @@
 <script setup>
-    import { cartStore } from '@/stores/cartStore'
+import { cartStore } from '@/stores/cartStore'
 // import FProduct from '@/components/FProduct.vue'
-import CartProduct from '@/components/cart/CartProduct.vue';
+import CartProduct from '@/components/cart/CartProduct.vue'
 
-
-    const myCartStore = cartStore()
-    console.log(myCartStore)
+const myCartStore = cartStore()
 </script>
 <template>
-    <div class="cart-page">
+  <div class="cart-page">
     This is the cart
     <h3>The products in cart</h3>
     <div class="subTotal">
@@ -19,7 +17,7 @@ import CartProduct from '@/components/cart/CartProduct.vue';
     </div>
     <div class="cart-flex">
       <!-- <FProduct v-for="item in myCartStore.cartItems" :key="item.product.id" :product="item.product" /> -->
-       <CartProduct v-for="item in myCartStore.cartItems" :key="item.product.id" :item="item"/>
+      <CartProduct v-for="item in myCartStore.cartItems" :key="item.product.id" :item="item" />
     </div>
   </div>
 </template>
