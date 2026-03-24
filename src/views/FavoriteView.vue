@@ -9,8 +9,7 @@ const myStore = productsStore()
 
 <template>
   <div class="favorite">
-    This is the favorite products
-    <h3>The favorite products</h3>
+    <h1 class="title">Favorite products</h1>
     <div class="products">
       <FProduct v-for="product in myStore.favoriteProducts" :key="product.id" :product="product" />
     </div>

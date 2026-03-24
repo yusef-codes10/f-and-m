@@ -7,8 +7,7 @@ const myCartStore = cartStore()
 </script>
 <template>
   <div class="cart-page">
-    This is the cart
-    <h3>The products in cart</h3>
+    <h1 class="title">The products in cart</h1>
     <div class="subTotal">
       {{ myCartStore.cartTotolPrice.total }}
     </div>
@@ -30,6 +29,10 @@ const myCartStore = cartStore()
 .cart-flex {
   display: flex;
   flex-direction: column;
+}
+
+.subTotal, .item-count {
+  margin: 0.5rem 2rem;
 }
 </style>
 
