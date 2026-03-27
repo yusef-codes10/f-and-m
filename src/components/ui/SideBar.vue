@@ -8,15 +8,11 @@ defineProps({
 import { sideBarStore } from '@/stores/sidebarStore.js'
 
 const myStore = sideBarStore()
-
-const close = () => {
-  myStore.isOpen = false
-}
 </script>
 
 <template>
   <div class="sidebar" :class="{ open: myStore.isOpen }">
-    <i @click="close" class="fa-solid fa-xmark"></i>
+    <i @click="myStore.closeSidebar" class="fa-solid fa-xmark"></i>
     <ul>
       <li><RouterLink :to="{ name: 'Women' }"> Women</RouterLink></li>
       <li><RouterLink :to="{ name: 'Men' }">Men</RouterLink></li>
