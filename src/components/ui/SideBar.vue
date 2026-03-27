@@ -1,9 +1,9 @@
 <script setup>
-import { defineProps } from 'vue'
+// import { defineProps } from 'vue'
 
-defineProps({
-  open: Boolean,
-})
+// defineProps({
+//   open: Boolean,
+// })
 
 import { sideBarStore } from '@/stores/sidebarStore.js'
 
@@ -14,10 +14,10 @@ const myStore = sideBarStore()
   <div class="sidebar" :class="{ open: myStore.isOpen }">
     <i @click="myStore.closeSidebar" class="fa-solid fa-xmark"></i>
     <ul>
-      <li><RouterLink :to="{ name: 'Women' }"> Women</RouterLink></li>
-      <li><RouterLink :to="{ name: 'Men' }">Men</RouterLink></li>
-      <li><RouterLink :to="{ name: 'Bags' }">Bags & Accesories</RouterLink></li>
-      <li><RouterLink :to="{ name: 'Favorites' }">Favorites</RouterLink></li>
+      <li><RouterLink :to="{ name: 'Women' }" @click="myStore.closeSidebar"> Women</RouterLink></li>
+      <li><RouterLink :to="{ name: 'Men' }" @click="myStore.closeSidebar">Men</RouterLink></li>
+      <li><RouterLink :to="{ name: 'Bags' }" @click="myStore.closeSidebar">Bags & Accesories</RouterLink></li>
+      <li><RouterLink :to="{ name: 'Favorites' }" @click="myStore.closeSidebar">Favorites</RouterLink></li>
     </ul>
   </div>
 </template>

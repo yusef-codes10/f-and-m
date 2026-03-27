@@ -16,7 +16,7 @@ const myStore = sideBarStore()
   <ProducsContainer />
   <PublishSection /> -->
   <!-- <HomeView /> -->
-   <SideBar :open="myStore.isOpen"/>
+   <SideBar v-show="myStore.isOpen"/>
   <RouterView />
   <FFooter />
   <!--  -->
